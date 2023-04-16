@@ -52,3 +52,7 @@ MySQL local DB for testing
     ```
     * step 5: go back to "start a MySQL server locally"
     
+-- open sql shell
+```
+docker exec -it [containerID] mysql -p
+```
