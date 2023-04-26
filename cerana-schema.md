@@ -8,6 +8,19 @@ Generated using [DbSchema](https://dbschema.com)
 ![img](./MainLayout.svg)
 
 
+## Tables
+
+1. [ledger_schema.discount](#table-ledger\_schema.discount) 
+2. [ledger_schema.order](#table-ledger\_schema.order) 
+3. [ledger_schema.order_product](#table-ledger\_schema.order\_product) 
+4. [ledger_schema.order_tag](#table-ledger\_schema.order\_tag) 
+5. [ledger_schema.preorder](#table-ledger\_schema.preorder) 
+6. [ledger_schema.preorder_product](#table-ledger\_schema.preorder\_product) 
+7. [ledger_schema.product](#table-ledger\_schema.product) 
+8. [ledger_schema.staff](#table-ledger\_schema.staff) 
+9. [ledger_schema.tag](#table-ledger\_schema.tag) 
+10. [ledger_schema.type](#table-ledger\_schema.type) 
+11. [ledger_schema.user](#table-ledger\_schema.user) 
 
 ### Table ledger_schema.discount 
 | | | |
@@ -117,7 +130,7 @@ ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4\_general\_ci
 ### Table ledger_schema.preorder 
 | | | |
 |---|---|---|
-| * &#128273;  | preorder\_id| VARCHAR(45) COLLATE utf8mb4\_general\_ci |
+| * &#128273;  &#11019; | preorder\_id| VARCHAR(45) COLLATE utf8mb4\_general\_ci |
 | * &#128270; &#11016; | user\_id| VARCHAR(45) COLLATE utf8mb4\_general\_ci |
 |  | preorder\_contact| VARCHAR(45) COLLATE utf8mb4\_general\_ci |
 |  | preorder\_create\_time| DATETIME  |
@@ -137,6 +150,30 @@ ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4\_general\_ci
 | | | |
 |---|---|---|
 |  | user_preorder | ( user\_id ) ref [ledger\_schema.user](#user) (user\_id) |
+
+
+##### Options 
+ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4\_general\_ci 
+
+
+### Table ledger_schema.preorder_product 
+| | | |
+|---|---|---|
+| * &#128273;  &#11016; | preorder\_id| VARCHAR(45) COLLATE utf8mb4\_general\_ci |
+| * &#128273;  &#11016; | product\_id| VARCHAR(45) COLLATE utf8mb4\_general\_ci |
+
+
+##### Indexes 
+| | | |
+|---|---|---|
+| &#128273;  | pk\_preorder\_product | ON preorder\_id, product\_id|
+| &#128270;  | product\_pp\_idx | ON product\_id|
+
+##### Foreign Keys
+| | | |
+|---|---|---|
+|  | preorder_pp | ( preorder\_id ) ref [ledger\_schema.preorder](#preorder) (preorder\_id) |
+|  | product_pp | ( product\_id ) ref [ledger\_schema.product](#product) (product\_id) |
 
 
 ##### Options 
