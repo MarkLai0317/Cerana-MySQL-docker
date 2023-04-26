@@ -154,7 +154,7 @@ VALUES ('GOI83b0EqgCcmEHOh32U', 'M7NCyLbo7bLK8PxqZJp8', 1);
 INSERT INTO `tag` (`tag_id`, `user_id`, `tag_name`)
 VALUES ('7UhtpM8s1WykcfGIPJkU', '00fkXxesFNbzzXFc5T2GGwQZBOx1', '草莓杯杯');
 
-INSERT INTO `order_tag` (`order_id`, `tage_id`)
+INSERT INTO `order_tag` (`order_id`, `tag_id`)
 VALUES ('GOI83b0EqgCcmEHOh32U', '7UhtpM8s1WykcfGIPJkU');
 
 INSERT INTO `preorder` (`preorder_id`, `user_id`, `preorder_contact`, `preorder_create_time`, `preorder_is_picked`, `preorder_note`, `preorder_pick_up_time`, `preorder_store_name`)
