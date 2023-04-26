@@ -117,6 +117,16 @@ CREATE TABLE `preorder` (
   CONSTRAINT `user_preorder` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+CREATE TABLE `preorder_product` (
+  `preorder_id` varchar(45) NOT NULL,
+  `product_id` varchar(45) NOT NULL,
+  PRIMARY KEY (`preorder_id`,`product_id`),
+  KEY `product_pp_idx` (`product_id`),
+  CONSTRAINT `preorder_pp` FOREIGN KEY (`preorder_id`) REFERENCES `preorder` (`preorder_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `product_pp` FOREIGN KEY (`product_id`) REFERENCES `product` (`product_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
 INSERT INTO `user` (`user_id`, `user_first_name`, `user_last_name`, `user_email`, `user_how_to_know_us`, `user_phone_number`, `user_create_time`)
 VALUES ('00fkXxesFNbzzXFc5T2GGwQZBOx1', '魏', '可晴', 'waketodo@gmail.com', '學生交流版', '0909503617', '2022-06-17 09:48:18');
 
