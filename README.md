@@ -8,7 +8,7 @@ MySQL local DB for testing
     ```
     * example
         ```
-        docker build -t mysql-test:latest
+        docker build -t mysql-test:latest .
         ```
 * step 2: create volume
     ```
