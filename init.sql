@@ -9,7 +9,8 @@ CREATE TABLE `user` (
   `user_email` varchar(45) DEFAULT NULL,
   `user_how_to_know_us` varchar(45) DEFAULT NULL,
   `user_phone_number` varchar(10) DEFAULT NULL,
-  `user_create_time` datetime DEFAULT NULL,
+  `store_name` varchar(50) DEFAULT NULL,
+  `user_create_time` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -111,7 +112,6 @@ CREATE TABLE `preorder` (
   `preorder_is_picked` tinyint(4) NOT NULL DEFAULT 0,
   `preorder_note` varchar(60) DEFAULT NULL,
   `preorder_pick_up_time` datetime DEFAULT NULL,
-  `preorder_store_name` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`preorder_id`),
   KEY `user_preorder_idx` (`user_id`),
   CONSTRAINT `user_preorder` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE
@@ -120,6 +120,7 @@ CREATE TABLE `preorder` (
 CREATE TABLE `preorder_product` (
   `preorder_id` varchar(45) NOT NULL,
   `product_id` varchar(45) NOT NULL,
+  `amount` int(11) NOT NULL,
   PRIMARY KEY (`preorder_id`,`product_id`),
   KEY `product_pp_idx` (`product_id`),
   CONSTRAINT `preorder_pp` FOREIGN KEY (`preorder_id`) REFERENCES `preorder` (`preorder_id`) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -127,8 +128,8 @@ CREATE TABLE `preorder_product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
-INSERT INTO `user` (`user_id`, `user_first_name`, `user_last_name`, `user_email`, `user_how_to_know_us`, `user_phone_number`, `user_create_time`)
-VALUES ('00fkXxesFNbzzXFc5T2GGwQZBOx1', '魏', '可晴', 'waketodo@gmail.com', '學生交流版', '0909503617', '2022-06-17 09:48:18');
+INSERT INTO `user` (`user_id`, `user_first_name`, `user_last_name`, `user_email`, `user_how_to_know_us`, `user_phone_number`, `store_name`,`user_create_time`)
+VALUES ('00fkXxesFNbzzXFc5T2GGwQZBOx1', '魏', '可晴', 'waketodo@gmail.com', '學生交流版', '0909503617', '肥皂店','2022-06-17 09:48:18');
 
 INSERT INTO `type` (`type_id`, `type_name`, `user_id`)
 VALUES ('dUoM8j33QOoMufngHglh', '香皂', '00fkXxesFNbzzXFc5T2GGwQZBOx1');
@@ -157,5 +158,9 @@ VALUES ('7UhtpM8s1WykcfGIPJkU', '00fkXxesFNbzzXFc5T2GGwQZBOx1', '草莓杯杯');
 INSERT INTO `order_tag` (`order_id`, `tag_id`)
 VALUES ('GOI83b0EqgCcmEHOh32U', '7UhtpM8s1WykcfGIPJkU');
 
-INSERT INTO `preorder` (`preorder_id`, `user_id`, `preorder_contact`, `preorder_create_time`, `preorder_is_picked`, `preorder_note`, `preorder_pick_up_time`, `preorder_store_name`)
-VALUES ('3ExP2YKc0PkKY9BWYQs4', '00fkXxesFNbzzXFc5T2GGwQZBOx1', '123', '2022-07-17 09:48:18', 0, 'none', '2022-07-17 09:48:18', 'name');
+INSERT INTO `preorder` (`preorder_id`, `user_id`, `preorder_contact`, `preorder_create_time`, `preorder_is_picked`, `preorder_note`, `preorder_pick_up_time`)
+VALUES ('3ExP2YKc0PkKY9BWYQs4', '00fkXxesFNbzzXFc5T2GGwQZBOx1', '123', '2022-07-17 09:48:18', 0, 'none', '2022-07-17 09:48:18');
+
+INSERT INTO `preorder_product` (`preorder_id`, `product_id`, `amount`)
+VALUES ('3ExP2YKc0PkKY9BWYQs4', '4wbx9iDwlxtxwuxWdxfG', '2'),
+       ('3ExP2YKc0PkKY9BWYQs4', 'M7NCyLbo7bLK8PxqZJp8', '5');

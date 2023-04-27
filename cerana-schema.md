@@ -10,17 +10,7 @@ Generated using [DbSchema](https://dbschema.com)
 
 ## Tables
 
-1. [ledger_schema.discount](#table-ledger\_schema.discount) 
-2. [ledger_schema.order](#table-ledger\_schema.order) 
-3. [ledger_schema.order_product](#table-ledger\_schema.order\_product) 
-4. [ledger_schema.order_tag](#table-ledger\_schema.order\_tag) 
-5. [ledger_schema.preorder](#table-ledger\_schema.preorder) 
-6. [ledger_schema.preorder_product](#table-ledger\_schema.preorder\_product) 
-7. [ledger_schema.product](#table-ledger\_schema.product) 
-8. [ledger_schema.staff](#table-ledger\_schema.staff) 
-9. [ledger_schema.tag](#table-ledger\_schema.tag) 
-10. [ledger_schema.type](#table-ledger\_schema.type) 
-11. [ledger_schema.user](#table-ledger\_schema.user) 
+1. [ledger_schema.discount](#table-ledger\_schema.discount) 2. [ledger_schema.order](#table-ledger\_schema.order) 3. [ledger_schema.order_product](#table-ledger\_schema.order\_product) 4. [ledger_schema.order_tag](#table-ledger\_schema.order\_tag) 5. [ledger_schema.preorder](#table-ledger\_schema.preorder) 6. [ledger_schema.preorder_product](#table-ledger\_schema.preorder\_product) 7. [ledger_schema.product](#table-ledger\_schema.product) 8. [ledger_schema.staff](#table-ledger\_schema.staff) 9. [ledger_schema.tag](#table-ledger\_schema.tag) 10. [ledger_schema.type](#table-ledger\_schema.type) 11. [ledger_schema.user](#table-ledger\_schema.user) 
 
 ### Table ledger_schema.discount 
 | | | |
@@ -137,7 +127,6 @@ ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4\_general\_ci
 | * | preorder\_is\_picked| TINYINT  DEFAULT '0' |
 |  | preorder\_note| VARCHAR(60) COLLATE utf8mb4\_general\_ci |
 |  | preorder\_pick\_up\_time| DATETIME  |
-|  | preorder\_store\_name| VARCHAR(45) COLLATE utf8mb4\_general\_ci |
 
 
 ##### Indexes 
@@ -161,6 +150,7 @@ ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4\_general\_ci
 |---|---|---|
 | * &#128273;  &#11016; | preorder\_id| VARCHAR(45) COLLATE utf8mb4\_general\_ci |
 | * &#128273;  &#11016; | product\_id| VARCHAR(45) COLLATE utf8mb4\_general\_ci |
+| * | amount| INT  |
 
 
 ##### Indexes 
@@ -293,7 +283,8 @@ ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4\_general\_ci
 |  | user\_email| VARCHAR(45) COLLATE utf8mb4\_general\_ci |
 |  | user\_how\_to\_know\_us| VARCHAR(45) COLLATE utf8mb4\_general\_ci |
 |  | user\_phone\_number| VARCHAR(10) COLLATE utf8mb4\_general\_ci |
-|  | user\_create\_time| DATETIME  |
+|  | store\_name| VARCHAR(50) COLLATE utf8mb4\_general\_ci |
+|  | user\_create\_time| DATETIME  DEFAULT CURRENT_TIMESTAMP |
 
 
 ##### Indexes 
