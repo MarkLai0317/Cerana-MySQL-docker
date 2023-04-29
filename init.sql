@@ -85,6 +85,16 @@ CREATE TABLE `order` (
   CONSTRAINT `user_order` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+CREATE TABLE `order_discount` (
+  `order_id` varchar(45) NOT NULL,
+  `discount_id` varchar(45) NOT NULL,
+  PRIMARY KEY (`order_id`,`discount_id`),
+  KEY `order_od_idx` (`order_id`),
+  CONSTRAINT `order_od` FOREIGN KEY (`order_id`) REFERENCES `order` (`order_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `discount_od` FOREIGN KEY (`discount_id`) REFERENCES `discount` (`discount_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
 CREATE TABLE `order_product` (
   `order_id` varchar(45) NOT NULL,
   `product_id` varchar(45) NOT NULL,
@@ -147,7 +157,10 @@ INSERT INTO `staff` (`staff_id`, `user_id`, `staff_name`, `staff_phone_number`, 
 VALUES ('k7LaWj79lc7kj8Wt6Fx5', '00fkXxesFNbzzXFc5T2GGwQZBOx1', '魏可晴', '0909503617', 'cathie22580@gmail.com');
 
 INSERT INTO `order` (`order_id`, `user_id`, `staff_id`, `order_discount`, `order_note`, `order_create_time`, `order_total_price`)
-VALUES ('GOI83b0EqgCcmEHOh32U', '00fkXxesFNbzzXFc5T2GGwQZBOx1', 'k7LaWj79lc7kj8Wt6Fx5', 0, '110204011', '2022-07-17 09:48:18', 249);
+VALUES ('GOI83b0EqgCcmEHOh32U', '00fkXxesFNbzzXFc5T2GGwQZBOx1', 'k7LaWj79lc7kj8Wt6Fx5', 20, '110204011', '2022-07-17 09:48:18', 249);
+
+INSERT INTO `order_discount` (`order_id`, `discount_id`)
+VALUES ('GOI83b0EqgCcmEHOh32U', '7cIST5sJmrwhfmtHbhHm');
 
 INSERT INTO `order_product` (`order_id`, `product_id`, `op_amount`)
 VALUES ('GOI83b0EqgCcmEHOh32U', 'M7NCyLbo7bLK8PxqZJp8', 1);

@@ -10,12 +10,12 @@ Generated using [DbSchema](https://dbschema.com)
 
 ## Tables
 
-1. [ledger_schema.discount](#table-ledger\_schema.discount) 2. [ledger_schema.order](#table-ledger\_schema.order) 3. [ledger_schema.order_product](#table-ledger\_schema.order\_product) 4. [ledger_schema.order_tag](#table-ledger\_schema.order\_tag) 5. [ledger_schema.preorder](#table-ledger\_schema.preorder) 6. [ledger_schema.preorder_product](#table-ledger\_schema.preorder\_product) 7. [ledger_schema.product](#table-ledger\_schema.product) 8. [ledger_schema.staff](#table-ledger\_schema.staff) 9. [ledger_schema.tag](#table-ledger\_schema.tag) 10. [ledger_schema.type](#table-ledger\_schema.type) 11. [ledger_schema.user](#table-ledger\_schema.user) 
+1. [ledger_schema.discount](#table-ledger\_schema.discount) 2. [ledger_schema.order](#table-ledger\_schema.order) 3. [ledger_schema.order_discount](#table-ledger\_schema.order\_discount) 4. [ledger_schema.order_product](#table-ledger\_schema.order\_product) 5. [ledger_schema.order_tag](#table-ledger\_schema.order\_tag) 6. [ledger_schema.preorder](#table-ledger\_schema.preorder) 7. [ledger_schema.preorder_product](#table-ledger\_schema.preorder\_product) 8. [ledger_schema.product](#table-ledger\_schema.product) 9. [ledger_schema.staff](#table-ledger\_schema.staff) 10. [ledger_schema.tag](#table-ledger\_schema.tag) 11. [ledger_schema.type](#table-ledger\_schema.type) 12. [ledger_schema.user](#table-ledger\_schema.user) 
 
 ### Table ledger_schema.discount 
 | | | |
 |---|---|---|
-| * &#128273;  | discount\_id| VARCHAR(45) COLLATE utf8mb4\_general\_ci |
+| * &#128273;  &#11019; | discount\_id| VARCHAR(45) COLLATE utf8mb4\_general\_ci |
 | * &#128270; &#11016; | user\_id| VARCHAR(45) COLLATE utf8mb4\_general\_ci |
 |  | discount\_value| INT  |
 |  | discount\_name| VARCHAR(45) COLLATE utf8mb4\_general\_ci |
@@ -62,6 +62,31 @@ ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4\_general\_ci
 |---|---|---|
 |  | staff_order | ( staff\_id ) ref [ledger\_schema.staff](#staff) (staff\_id) |
 |  | user_order | ( user\_id ) ref [ledger\_schema.user](#user) (user\_id) |
+
+
+##### Options 
+ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4\_general\_ci 
+
+
+### Table ledger_schema.order_discount 
+| | | |
+|---|---|---|
+| * &#128273;  &#11016; | order\_id| VARCHAR(45) COLLATE utf8mb4\_general\_ci |
+| * &#128273;  &#11016; | discount\_id| VARCHAR(45) COLLATE utf8mb4\_general\_ci |
+
+
+##### Indexes 
+| | | |
+|---|---|---|
+| &#128273;  | pk\_order\_discount | ON order\_id, discount\_id|
+| &#128270;  | order\_od\_idx | ON order\_id|
+| &#128270;  | discount\_od | ON discount\_id|
+
+##### Foreign Keys
+| | | |
+|---|---|---|
+|  | discount_od | ( discount\_id ) ref [ledger\_schema.discount](#discount) (discount\_id) |
+|  | order_od | ( order\_id ) ref [ledger\_schema.order](#order) (order\_id) |
 
 
 ##### Options 

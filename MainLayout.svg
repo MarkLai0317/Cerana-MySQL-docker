@@ -1,4 +1,4 @@
-<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'   width='1632' height='862' viewBox='0 0 1632 862' >
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'   width='1408' height='1086' viewBox='0 0 1408 1086' >
   <script type='text/ecmascript'>
   <![CDATA[
   function hghl(el) { for ( var i in el ){ var elem = document.getElementById(el[i]); if ( elem != null ) elem.setAttribute('class','highlight');  }  }
@@ -236,8 +236,8 @@
 
 <!-- == Shape Colors == -->
 <!-- == Desktop == -->
-<rect x='1' y='1' width='1630' height='860' rx='8' ry='8' style='fill:url(#layoutBgA); stroke:#aaa; stroke-width:1px;' />
-<rect x='1' y='1' width='1630' height='860' rx='8' ry='8' style='fill:url(#layoutBgEval);' />
+<rect x='1' y='1' width='1406' height='1084' rx='8' ry='8' style='fill:url(#layoutBgA); stroke:#aaa; stroke-width:1px;' />
+<rect x='1' y='1' width='1406' height='1084' rx='8' ry='8' style='fill:url(#layoutBgEval);' />
 
 <!-- == Legend == -->
 <g transform='translate(10,10)'>
@@ -250,334 +250,368 @@ DbSchema has a free Community Edition.</title></tspan></text></a>
 </g>
 
 <g transform='translate(0,110)'>
-<!-- == Group 'product' == -->
-<rect class='grp' style='fill:#EEFDEC;stroke:#71AC66' x='960' y='45' width='640' height='402' />
-<text x='972' y='61' style='fill:#71AC66;'>product</text>
+<!-- == Group 'order' == -->
+<rect class='grp' style='fill:#EEFDEC;stroke:#71AC66' x='752' y='237' width='624' height='402' />
+<text x='764' y='253' style='fill:#71AC66;'>order</text>
 <!-- == Group 'user' == -->
-<rect class='grp' style='fill:#ECF2FD;stroke:#6680AC' x='32' y='45' width='848' height='642' />
-<text x='44' y='61' style='fill:#6680AC;'>user</text>
+<rect class='grp' style='fill:#ECF2FD;stroke:#6680AC' x='32' y='237' width='624' height='674' />
+<text x='44' y='253' style='fill:#6680AC;'>user</text>
 <!-- == Fk 'discount_user_discount' == -->
-<path id='discount_user_discount'  onmouseover="hghl(['discount_user_discount','ledger_schema.discount.user_id','ledger_schema.user.user_id'])" onmouseout="uhghl(['discount_user_discount','ledger_schema.discount.user_id','ledger_schema.user.user_id'])" transform='translate(8,0)' class='unhighlight' d='M 176,528L 176,424Q 176,416 184,416L 256,416' >
+<path id='discount_user_discount'  onmouseover="hghl(['discount_user_discount','ledger_schema.discount.user_id','ledger_schema.user.user_id'])" onmouseout="uhghl(['discount_user_discount','ledger_schema.discount.user_id','ledger_schema.user.user_id'])" transform='translate(8,0)' class='unhighlight' d='M 288,544L 264,544Q 256,544 256,536L 256,440Q 256,432 248,432L 240,432' >
 	<title>&#x1F517;  Foreign Key user_discount
 discount ref user ( user_id )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 176,528L 176,424Q 176,416 184,416L 256,416' ><title>&#x1F517;  Foreign Key user_discount
+<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 288,544L 264,544Q 256,544 256,536L 256,440Q 256,432 248,432L 240,432' ><title>&#x1F517;  Foreign Key user_discount
 discount ref user ( user_id )</title></path>
-<text x='179' y='526' transform='rotate(270 179,526)' class='relName'>user&#95;id</text>
+<text x='253' y='539' transform='rotate(0 253,539)' class='relName'>user&#95;id</text>
 <!-- == Fk 'order_staff_order' == -->
-<path id='order_staff_order'  onmouseover="hghl(['order_staff_order','ledger_schema.order.staff_id','ledger_schema.staff.staff_id'])" onmouseout="uhghl(['order_staff_order','ledger_schema.order.staff_id','ledger_schema.staff.staff_id'])" transform='translate(8,0)' class='unhighlight' d='M 544,432L 544,528' >
+<path id='order_staff_order'  onmouseover="hghl(['order_staff_order','ledger_schema.order.staff_id','ledger_schema.staff.staff_id'])" onmouseout="uhghl(['order_staff_order','ledger_schema.order.staff_id','ledger_schema.staff.staff_id'])" transform='translate(8,0)' class='unhighlight' d='M 1104,288L 1168,288' >
 	<title>&#x1F517;  Foreign Key staff_order
 order ref staff ( staff_id )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 544,432L 544,528' ><title>&#x1F517;  Foreign Key staff_order
+<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 1104,288L 1168,288' ><title>&#x1F517;  Foreign Key staff_order
 order ref staff ( staff_id )</title></path>
-<text x='557' y='434' transform='rotate(90 557,434)' class='relName'>staff&#95;id</text>
+<text x='1114' y='283' transform='rotate(0 1114,283)' class='relName'>staff&#95;id</text>
 <!-- == Fk 'order_user_order' == -->
-<path id='order_user_order'  onmouseover="hghl(['order_user_order','ledger_schema.order.user_id','ledger_schema.user.user_id'])" onmouseout="uhghl(['order_user_order','ledger_schema.order.user_id','ledger_schema.user.user_id'])" transform='translate(8,0)' class='unhighlight' d='M 512,288L 464,288' >
+<path id='order_user_order'  onmouseover="hghl(['order_user_order','ledger_schema.order.user_id','ledger_schema.user.user_id'])" onmouseout="uhghl(['order_user_order','ledger_schema.order.user_id','ledger_schema.user.user_id'])" transform='translate(8,0)' class='unhighlight' d='M 960,432L 960,472Q 960,480 952,480L 216,480Q 208,480 208,472L 208,448' >
 	<title>&#x1F517;  Foreign Key user_order
 order ref user ( user_id )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 512,288L 464,288' ><title>&#x1F517;  Foreign Key user_order
+<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 960,432L 960,472Q 960,480 952,480L 216,480Q 208,480 208,472L 208,448' ><title>&#x1F517;  Foreign Key user_order
 order ref user ( user_id )</title></path>
-<text x='477' y='283' transform='rotate(0 477,283)' class='relName'>user&#95;id</text>
+<text x='973' y='434' transform='rotate(90 973,434)' class='relName'>user&#95;id</text>
+<!-- == Fk 'order_discount_discount_od' == -->
+<path id='order_discount_discount_od'  onmouseover="hghl(['order_discount_discount_od','ledger_schema.order_discount.discount_id','ledger_schema.discount.discount_id'])" onmouseout="uhghl(['order_discount_discount_od','ledger_schema.order_discount.discount_id','ledger_schema.discount.discount_id'])" transform='translate(8,0)' class='unhighlight' d='M 512,560L 448,560' >
+	<title>&#x1F517;  Foreign Key discount_od
+order_discount ref discount ( discount_id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 512,560L 448,560' ><title>&#x1F517;  Foreign Key discount_od
+order_discount ref discount ( discount_id )</title></path>
+<text x='450' y='555' transform='rotate(0 450,555)' class='relName'>discount&#95;id</text>
+<!-- == Fk 'order_discount_order_od' == -->
+<path id='order_discount_order_od'  onmouseover="hghl(['order_discount_order_od','ledger_schema.order_discount.order_id','ledger_schema.order.order_id'])" onmouseout="uhghl(['order_discount_order_od','ledger_schema.order_discount.order_id','ledger_schema.order.order_id'])" transform='translate(8,0)' class='unhighlight' d='M 624,528L 624,408Q 624,400 632,400L 928,400' >
+	<title>&#x1F517;  Foreign Key order_od
+order_discount ref order ( order_id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 624,528L 624,408Q 624,400 632,400L 928,400' ><title>&#x1F517;  Foreign Key order_od
+order_discount ref order ( order_id )</title></path>
+<text x='627' y='526' transform='rotate(270 627,526)' class='relName'>order&#95;id</text>
 <!-- == Fk 'order_product_order_op' == -->
-<path id='order_product_order_op'  onmouseover="hghl(['order_product_order_op','ledger_schema.order_product.order_id','ledger_schema.order.order_id'])" onmouseout="uhghl(['order_product_order_op','ledger_schema.order_product.order_id','ledger_schema.order.order_id'])" transform='translate(8,0)' class='unhighlight' d='M 416,176L 416,232Q 416,240 424,240L 536,240Q 544,240 544,248L 544,256' >
+<path id='order_product_order_op'  onmouseover="hghl(['order_product_order_op','ledger_schema.order_product.order_id','ledger_schema.order.order_id'])" onmouseout="uhghl(['order_product_order_op','ledger_schema.order_product.order_id','ledger_schema.order.order_id'])" transform='translate(8,0)' class='unhighlight' d='M 1168,528L 1096,528Q 1088,528 1088,520L 1088,432' >
 	<title>&#x1F517;  Foreign Key order_op
 order_product ref order ( order_id )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 416,176L 416,232Q 416,240 424,240L 536,240Q 544,240 544,248L 544,256' ><title>&#x1F517;  Foreign Key order_op
+<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 1168,528L 1096,528Q 1088,528 1088,520L 1088,432' ><title>&#x1F517;  Foreign Key order_op
 order_product ref order ( order_id )</title></path>
-<text x='429' y='178' transform='rotate(90 429,178)' class='relName'>order&#95;id</text>
+<text x='1125' y='523' transform='rotate(0 1125,523)' class='relName'>order&#95;id</text>
 <!-- == Fk 'order_product_product_op' == -->
-<path id='order_product_product_op'  onmouseover="hghl(['order_product_product_op','ledger_schema.order_product.product_id','ledger_schema.product.product_id'])" onmouseout="uhghl(['order_product_product_op','ledger_schema.order_product.product_id','ledger_schema.product.product_id'])" transform='translate(8,0)' class='unhighlight' d='M 432,96L 960,96' >
+<path id='order_product_product_op'  onmouseover="hghl(['order_product_product_op','ledger_schema.order_product.product_id','ledger_schema.product.product_id'])" onmouseout="uhghl(['order_product_product_op','ledger_schema.order_product.product_id','ledger_schema.product.product_id'])" transform='translate(8,0)' class='unhighlight' d='M 1168,544L 1080,544Q 1072,544 1072,536L 1072,456Q 1072,448 1064,448L 440,448Q 432,448 432,440L 432,432' >
 	<title>&#x1F517;  Foreign Key product_op
 order_product ref product ( product_id )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 432,96L 960,96' ><title>&#x1F517;  Foreign Key product_op
+<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 1168,544L 1080,544Q 1072,544 1072,536L 1072,456Q 1072,448 1064,448L 440,448Q 432,448 432,440L 432,432' ><title>&#x1F517;  Foreign Key product_op
 order_product ref product ( product_id )</title></path>
-<text x='442' y='91' transform='rotate(0 442,91)' class='relName'>product&#95;id</text>
+<text x='1110' y='539' transform='rotate(0 1110,539)' class='relName'>product&#95;id</text>
 <!-- == Fk 'order_tag_order_ot' == -->
-<path id='order_tag_order_ot'  onmouseover="hghl(['order_tag_order_ot','ledger_schema.order_tag.order_id','ledger_schema.order.order_id'])" onmouseout="uhghl(['order_tag_order_ot','ledger_schema.order_tag.order_id','ledger_schema.order.order_id'])" transform='translate(8,0)' class='unhighlight' d='M 752,288L 688,288' >
+<path id='order_tag_order_ot'  onmouseover="hghl(['order_tag_order_ot','ledger_schema.order_tag.order_id','ledger_schema.order.order_id'])" onmouseout="uhghl(['order_tag_order_ot','ledger_schema.order_tag.order_id','ledger_schema.order.order_id'])" transform='translate(8,0)' class='unhighlight' d='M 848,512L 848,392Q 848,384 856,384L 928,384' >
 	<title>&#x1F517;  Foreign Key order_ot
 order_tag ref order ( order_id )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 752,288L 688,288' ><title>&#x1F517;  Foreign Key order_ot
+<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 848,512L 848,392Q 848,384 856,384L 928,384' ><title>&#x1F517;  Foreign Key order_ot
 order_tag ref order ( order_id )</title></path>
-<text x='709' y='283' transform='rotate(0 709,283)' class='relName'>order&#95;id</text>
+<text x='851' y='510' transform='rotate(270 851,510)' class='relName'>order&#95;id</text>
 <!-- == Fk 'order_tag_tag_ot' == -->
-<path id='order_tag_tag_ot'  onmouseover="hghl(['order_tag_tag_ot','ledger_schema.order_tag.tag_id','ledger_schema.tag.tag_id'])" onmouseout="uhghl(['order_tag_tag_ot','ledger_schema.order_tag.tag_id','ledger_schema.tag.tag_id'])" transform='translate(8,0)' class='unhighlight' d='M 784,352L 784,504Q 784,512 776,512L 376,512Q 368,512 368,520L 368,528' >
+<path id='order_tag_tag_ot'  onmouseover="hghl(['order_tag_tag_ot','ledger_schema.order_tag.tag_id','ledger_schema.tag.tag_id'])" onmouseout="uhghl(['order_tag_tag_ot','ledger_schema.order_tag.tag_id','ledger_schema.tag.tag_id'])" transform='translate(8,0)' class='unhighlight' d='M 864,544L 928,544' >
 	<title>&#x1F517;  Foreign Key tag_ot
 order_tag ref tag ( tag_id )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 784,352L 784,504Q 784,512 776,512L 376,512Q 368,512 368,520L 368,528' ><title>&#x1F517;  Foreign Key tag_ot
+<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 864,544L 928,544' ><title>&#x1F517;  Foreign Key tag_ot
 order_tag ref tag ( tag_id )</title></path>
-<text x='797' y='354' transform='rotate(90 797,354)' class='relName'>tag&#95;id</text>
+<text x='874' y='539' transform='rotate(0 874,539)' class='relName'>tag&#95;id</text>
 <!-- == Fk 'preorder_user_preorder' == -->
-<path id='preorder_user_preorder'  onmouseover="hghl(['preorder_user_preorder','ledger_schema.preorder.user_id','ledger_schema.user.user_id'])" onmouseout="uhghl(['preorder_user_preorder','ledger_schema.preorder.user_id','ledger_schema.user.user_id'])" transform='translate(8,0)' class='unhighlight' d='M 1184,80L 1144,80Q 1136,80 1136,72L 1136,40Q 1136,32 1128,32L 456,32Q 448,32 448,40L 448,256' >
+<path id='preorder_user_preorder'  onmouseover="hghl(['preorder_user_preorder','ledger_schema.preorder.user_id','ledger_schema.user.user_id'])" onmouseout="uhghl(['preorder_user_preorder','ledger_schema.preorder.user_id','ledger_schema.user.user_id'])" transform='translate(8,0)' class='unhighlight' d='M 64,528L 64,448' >
 	<title>&#x1F517;  Foreign Key user_preorder
 preorder ref user ( user_id )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 1184,80L 1144,80Q 1136,80 1136,72L 1136,40Q 1136,32 1128,32L 456,32Q 448,32 448,40L 448,256' ><title>&#x1F517;  Foreign Key user_preorder
+<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 64,528L 64,448' ><title>&#x1F517;  Foreign Key user_preorder
 preorder ref user ( user_id )</title></path>
-<text x='1149' y='75' transform='rotate(0 1149,75)' class='relName'>user&#95;id</text>
+<text x='67' y='526' transform='rotate(270 67,526)' class='relName'>user&#95;id</text>
 <!-- == Fk 'preorder_product_preorder_pp' == -->
-<path id='preorder_product_preorder_pp'  onmouseover="hghl(['preorder_product_preorder_pp','ledger_schema.preorder_product.preorder_id','ledger_schema.preorder.preorder_id'])" onmouseout="uhghl(['preorder_product_preorder_pp','ledger_schema.preorder_product.preorder_id','ledger_schema.preorder.preorder_id'])" transform='translate(8,0)' class='unhighlight' d='M 1440,96L 1392,96' >
+<path id='preorder_product_preorder_pp'  onmouseover="hghl(['preorder_product_preorder_pp','ledger_schema.preorder_product.preorder_id','ledger_schema.preorder.preorder_id'])" onmouseout="uhghl(['preorder_product_preorder_pp','ledger_schema.preorder_product.preorder_id','ledger_schema.preorder.preorder_id'])" transform='translate(8,0)' class='unhighlight' d='M 288,800L 232,800Q 224,800 224,792L 224,704' >
 	<title>&#x1F517;  Foreign Key preorder_pp
 preorder_product ref preorder ( preorder_id )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 1440,96L 1392,96' ><title>&#x1F517;  Foreign Key preorder_pp
+<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 288,800L 232,800Q 224,800 224,792L 224,704' ><title>&#x1F517;  Foreign Key preorder_pp
 preorder_product ref preorder ( preorder_id )</title></path>
-<text x='1376' y='91' transform='rotate(0 1376,91)' class='relName'>preorder&#95;id</text>
+<text x='224' y='795' transform='rotate(0 224,795)' class='relName'>preorder&#95;id</text>
 <!-- == Fk 'preorder_product_product_pp' == -->
-<path id='preorder_product_product_pp'  onmouseover="hghl(['preorder_product_product_pp','ledger_schema.preorder_product.product_id','ledger_schema.product.product_id'])" onmouseout="uhghl(['preorder_product_product_pp','ledger_schema.preorder_product.product_id','ledger_schema.product.product_id'])" transform='translate(8,0)' class='unhighlight' d='M 1440,80L 1416,80Q 1408,80 1408,72L 1408,56Q 1408,48 1400,48L 1112,48Q 1104,48 1104,56L 1104,64' >
+<path id='preorder_product_product_pp'  onmouseover="hghl(['preorder_product_product_pp','ledger_schema.preorder_product.product_id','ledger_schema.product.product_id'])" onmouseout="uhghl(['preorder_product_product_pp','ledger_schema.preorder_product.product_id','ledger_schema.product.product_id'])" transform='translate(8,0)' class='unhighlight' d='M 416,784L 416,696Q 416,688 424,688L 456,688Q 464,688 464,680L 464,424Q 464,416 456,416L 448,416' >
 	<title>&#x1F517;  Foreign Key product_pp
 preorder_product ref product ( product_id )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 1440,80L 1416,80Q 1408,80 1408,72L 1408,56Q 1408,48 1400,48L 1112,48Q 1104,48 1104,56L 1104,64' ><title>&#x1F517;  Foreign Key product_pp
+<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 416,784L 416,696Q 416,688 424,688L 456,688Q 464,688 464,680L 464,424Q 464,416 456,416L 448,416' ><title>&#x1F517;  Foreign Key product_pp
 preorder_product ref product ( product_id )</title></path>
-<text x='1382' y='75' transform='rotate(0 1382,75)' class='relName'>product&#95;id</text>
+<text x='419' y='782' transform='rotate(270 419,782)' class='relName'>product&#95;id</text>
 <!-- == Fk 'product_type_product' == -->
-<path id='product_type_product'  onmouseover="hghl(['product_type_product','ledger_schema.product.type_id','ledger_schema.type.type_id'])" onmouseout="uhghl(['product_type_product','ledger_schema.product.type_id','ledger_schema.type.type_id'])" transform='translate(8,0)' class='unhighlight' d='M 1104,240L 1104,328Q 1104,336 1112,336L 1184,336' >
+<path id='product_type_product'  onmouseover="hghl(['product_type_product','ledger_schema.product.type_id','ledger_schema.type.type_id'])" onmouseout="uhghl(['product_type_product','ledger_schema.product.type_id','ledger_schema.type.type_id'])" transform='translate(8,0)' class='unhighlight' d='M 448,288L 512,288' >
 	<title>&#x1F517;  Foreign Key type_product
 product ref type ( type_id )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 1104,240L 1104,328Q 1104,336 1112,336L 1184,336' ><title>&#x1F517;  Foreign Key type_product
+<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 448,288L 512,288' ><title>&#x1F517;  Foreign Key type_product
 product ref type ( type_id )</title></path>
-<text x='1117' y='242' transform='rotate(90 1117,242)' class='relName'>type&#95;id</text>
+<text x='458' y='283' transform='rotate(0 458,283)' class='relName'>type&#95;id</text>
 <!-- == Fk 'product_user_product' == -->
-<path id='product_user_product'  onmouseover="hghl(['product_user_product','ledger_schema.product.user_id','ledger_schema.user.user_id'])" onmouseout="uhghl(['product_user_product','ledger_schema.product.user_id','ledger_schema.user.user_id'])" transform='translate(8,0)' class='unhighlight' d='M 960,208L 440,208Q 432,208 432,216L 432,256' >
+<path id='product_user_product'  onmouseover="hghl(['product_user_product','ledger_schema.product.user_id','ledger_schema.user.user_id'])" onmouseout="uhghl(['product_user_product','ledger_schema.product.user_id','ledger_schema.user.user_id'])" transform='translate(8,0)' class='unhighlight' d='M 288,288L 240,288' >
 	<title>&#x1F517;  Foreign Key user_product
 product ref user ( user_id )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 960,208L 440,208Q 432,208 432,216L 432,256' ><title>&#x1F517;  Foreign Key user_product
+<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 288,288L 240,288' ><title>&#x1F517;  Foreign Key user_product
 product ref user ( user_id )</title></path>
-<text x='925' y='203' transform='rotate(0 925,203)' class='relName'>user&#95;id</text>
+<text x='253' y='283' transform='rotate(0 253,283)' class='relName'>user&#95;id</text>
 <!-- == Fk 'staff_user_staff' == -->
-<path id='staff_user_staff'  onmouseover="hghl(['staff_user_staff','ledger_schema.staff.user_id','ledger_schema.user.user_id'])" onmouseout="uhghl(['staff_user_staff','ledger_schema.staff.user_id','ledger_schema.user.user_id'])" transform='translate(8,0)' class='unhighlight' d='M 512,544L 456,544Q 448,544 448,536L 448,448' >
+<path id='staff_user_staff'  onmouseover="hghl(['staff_user_staff','ledger_schema.staff.user_id','ledger_schema.user.user_id'])" onmouseout="uhghl(['staff_user_staff','ledger_schema.staff.user_id','ledger_schema.user.user_id'])" transform='translate(8,0)' class='unhighlight' d='M 1168,272L 1128,272Q 1120,272 1120,264L 1120,248Q 1120,240 1112,240L 232,240Q 224,240 224,248L 224,256' >
 	<title>&#x1F517;  Foreign Key user_staff
 staff ref user ( user_id )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 512,544L 456,544Q 448,544 448,536L 448,448' ><title>&#x1F517;  Foreign Key user_staff
+<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 1168,272L 1128,272Q 1120,272 1120,264L 1120,248Q 1120,240 1112,240L 232,240Q 224,240 224,248L 224,256' ><title>&#x1F517;  Foreign Key user_staff
 staff ref user ( user_id )</title></path>
-<text x='477' y='539' transform='rotate(0 477,539)' class='relName'>user&#95;id</text>
+<text x='1133' y='267' transform='rotate(0 1133,267)' class='relName'>user&#95;id</text>
 <!-- == Fk 'tag_user_tag' == -->
-<path id='tag_user_tag'  onmouseover="hghl(['tag_user_tag','ledger_schema.tag.user_id','ledger_schema.user.user_id'])" onmouseout="uhghl(['tag_user_tag','ledger_schema.tag.user_id','ledger_schema.user.user_id'])" transform='translate(8,0)' class='unhighlight' d='M 288,528L 288,448' >
+<path id='tag_user_tag'  onmouseover="hghl(['tag_user_tag','ledger_schema.tag.user_id','ledger_schema.user.user_id'])" onmouseout="uhghl(['tag_user_tag','ledger_schema.tag.user_id','ledger_schema.user.user_id'])" transform='translate(8,0)' class='unhighlight' d='M 928,528L 888,528Q 880,528 880,520L 880,472Q 880,464 872,464L 232,464Q 224,464 224,456L 224,448' >
 	<title>&#x1F517;  Foreign Key user_tag
 tag ref user ( user_id )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 288,528L 288,448' ><title>&#x1F517;  Foreign Key user_tag
+<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 928,528L 888,528Q 880,528 880,520L 880,472Q 880,464 872,464L 232,464Q 224,464 224,456L 224,448' ><title>&#x1F517;  Foreign Key user_tag
 tag ref user ( user_id )</title></path>
-<text x='291' y='526' transform='rotate(270 291,526)' class='relName'>user&#95;id</text>
+<text x='893' y='523' transform='rotate(0 893,523)' class='relName'>user&#95;id</text>
 <!-- == Fk 'type_user_type' == -->
-<path id='type_user_type'  onmouseover="hghl(['type_user_type','ledger_schema.type.user_id','ledger_schema.user.user_id'])" onmouseout="uhghl(['type_user_type','ledger_schema.type.user_id','ledger_schema.user.user_id'])" transform='translate(8,0)' class='unhighlight' d='M 1216,432L 1216,456Q 1216,464 1208,464L 440,464Q 432,464 432,456L 432,448' >
+<path id='type_user_type'  onmouseover="hghl(['type_user_type','ledger_schema.type.user_id','ledger_schema.user.user_id'])" onmouseout="uhghl(['type_user_type','ledger_schema.type.user_id','ledger_schema.user.user_id'])" transform='translate(8,0)' class='unhighlight' d='M 512,272L 472,272Q 464,272 464,264L 464,232Q 464,224 456,224L 216,224Q 208,224 208,232L 208,256' >
 	<title>&#x1F517;  Foreign Key user_type
 type ref user ( user_id )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 1216,432L 1216,456Q 1216,464 1208,464L 440,464Q 432,464 432,456L 432,448' ><title>&#x1F517;  Foreign Key user_type
+<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'    d='M 512,272L 472,272Q 464,272 464,264L 464,232Q 464,224 456,224L 216,224Q 208,224 208,232L 208,256' ><title>&#x1F517;  Foreign Key user_type
 type ref user ( user_id )</title></path>
-<text x='1229' y='434' transform='rotate(90 1229,434)' class='relName'>user&#95;id</text>
+<text x='477' y='267' transform='rotate(0 477,267)' class='relName'>user&#95;id</text>
 <!-- == Table 'discount' == -->
-<rect id='depict_ledger&#95;schema&#46;discount' class='entity' style='stroke:none;' x='48' y='536' width='144' height='128' rx='4' ry='4' />
-<path d='M 48 564 L 48 540 Q 48 536 52 536 L 188 536 Q 192 536 192 540 L 192 564 L48 564 ' style='fill:url(#tbg_BED3F4);stroke-width:0;' />
-<rect class='entity' x='48' y='536' width='144' height='128' rx='4' ry='4' style='fill:none;stroke:#E1E7F2'/>
-<a xlink:href='#ledger_schema.discount'><text x='90' y='555' >discount</text><title>Table ledger_schema.discount</title></a>
-  <use id='nn' x='50' y='573' xlink:href='#nn'/><use id='pk' x='50' y='572' xlink:href='#pk'><title>&#x1F511;  Pk pk_discount ( discount_id ) </title></use><a xlink:href='#ledger_schema.discount_discount_id'><text id='ledger&#95;schema&#46;discount&#46;discount&#95;id' x='67' y='583'>discount&#95;id</text><title>&#10697;  discount_id
-     * varchar(45)</title></a>
-<text x='189' y='580' text-anchor='end' class='colType'>t</text>  <use id='nn' x='50' y='589' xlink:href='#nn'/><use id='idx' x='50' y='588' xlink:href='#idx'><title>&#x1F50D;  user_discount_idx ( user_id ) </title></use><a xlink:href='#ledger_schema.discount_user_id'><text id='ledger&#95;schema&#46;discount&#46;user&#95;id' x='67' y='599' onmouseover="hghl(['discount_user_discount','ledger_schema.user.user_id'])" onmouseout="uhghl(['discount_user_discount','ledger_schema.user.user_id'])">user&#95;id</text><title>&#10697;  user_id
+<rect id='depict_ledger&#95;schema&#46;discount' class='entity' style='stroke:none;' x='304' y='536' width='144' height='128' rx='4' ry='4' />
+<path d='M 304 564 L 304 540 Q 304 536 308 536 L 444 536 Q 448 536 448 540 L 448 564 L304 564 ' style='fill:url(#tbg_BED3F4);stroke-width:0;' />
+<rect class='entity' x='304' y='536' width='144' height='128' rx='4' ry='4' style='fill:none;stroke:#E1E7F2'/>
+<a xlink:href='#ledger_schema.discount'><text x='346' y='555' >discount</text><title>Table ledger_schema.discount</title></a>
+  <use id='nn' x='306' y='573' xlink:href='#nn'/><use id='pk' x='306' y='572' xlink:href='#pk'><title>&#x1F511;  Pk pk_discount ( discount_id ) </title></use><a xlink:href='#ledger_schema.discount_discount_id'><text id='ledger&#95;schema&#46;discount&#46;discount&#95;id' x='323' y='583' onmouseover="hghl(['order_discount_discount_od','ledger_schema.order_discount.discount_id'])" onmouseout="uhghl(['order_discount_discount_od','ledger_schema.order_discount.discount_id'])">discount&#95;id</text><title>&#10697;  discount_id
+     * varchar(45)
+ &#8601; order_discount( discount_id )</title></a>
+<a xlink:href='#ledger_schema.discount.discount_id'><use id='ref' x='436' y='572' xlink:href='#ref'/><title>&#x1F517;  Referred by order_discount ( discount_id ) </title></a>
+  <use id='nn' x='306' y='589' xlink:href='#nn'/><use id='idx' x='306' y='588' xlink:href='#idx'><title>&#x1F50D;  user_discount_idx ( user_id ) </title></use><a xlink:href='#ledger_schema.discount_user_id'><text id='ledger&#95;schema&#46;discount&#46;user&#95;id' x='323' y='599' onmouseover="hghl(['discount_user_discount','ledger_schema.user.user_id'])" onmouseout="uhghl(['discount_user_discount','ledger_schema.user.user_id'])">user&#95;id</text><title>&#10697;  user_id
      * varchar(45)
  &#8599; discount( user_id )</title></a>
-<a xlink:href='#ledger_schema.discount.user_id'><use id='fk' x='180' y='588' xlink:href='#fk'/><title>&#x1F517;  References user ( user_id ) </title></a>
-  <a xlink:href='#ledger_schema.discount_discount_value'><text id='ledger&#95;schema&#46;discount&#46;discount&#95;value' x='67' y='615'>discount&#95;value</text><title>&#10697;  discount_value
+<a xlink:href='#ledger_schema.discount.user_id'><use id='fk' x='436' y='588' xlink:href='#fk'/><title>&#x1F517;  References user ( user_id ) </title></a>
+  <a xlink:href='#ledger_schema.discount_discount_value'><text id='ledger&#95;schema&#46;discount&#46;discount&#95;value' x='323' y='615'>discount&#95;value</text><title>&#10697;  discount_value
      int</title></a>
-<text x='189' y='612' text-anchor='end' class='colType'>&#35;</text>  <a xlink:href='#ledger_schema.discount_discount_name'><text id='ledger&#95;schema&#46;discount&#46;discount&#95;name' x='67' y='631'>discount&#95;name</text><title>&#10697;  discount_name
+<text x='445' y='612' text-anchor='end' class='colType'>&#35;</text>  <a xlink:href='#ledger_schema.discount_discount_name'><text id='ledger&#95;schema&#46;discount&#46;discount&#95;name' x='323' y='631'>discount&#95;name</text><title>&#10697;  discount_name
      varchar(45)</title></a>
-<text x='189' y='628' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.discount_discount_note'><text id='ledger&#95;schema&#46;discount&#46;discount&#95;note' x='67' y='647'>discount&#95;note</text><title>&#10697;  discount_note
+<text x='445' y='628' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.discount_discount_note'><text id='ledger&#95;schema&#46;discount&#46;discount&#95;note' x='323' y='647'>discount&#95;note</text><title>&#10697;  discount_note
      varchar(45)</title></a>
-<text x='189' y='644' text-anchor='end' class='colType'>t</text>
+<text x='445' y='644' text-anchor='end' class='colType'>t</text>
 <!-- == Table 'order' == -->
-<rect id='depict_ledger&#95;schema&#46;order' class='entity' style='stroke:none;' x='528' y='264' width='160' height='160' rx='4' ry='4' />
-<path d='M 528 292 L 528 268 Q 528 264 532 264 L 684 264 Q 688 264 688 268 L 688 292 L528 292 ' style='fill:url(#tbg_BED3F4);stroke-width:0;' />
-<rect class='entity' x='528' y='264' width='160' height='160' rx='4' ry='4' style='fill:none;stroke:#E1E7F2'/>
-<a xlink:href='#ledger_schema.order'><text x='587' y='283' >order</text><title>Table ledger_schema.order</title></a>
-  <use id='nn' x='530' y='301' xlink:href='#nn'/><use id='pk' x='530' y='300' xlink:href='#pk'><title>&#x1F511;  Pk pk_order ( order_id ) </title></use><a xlink:href='#ledger_schema.order_order_id'><text id='ledger&#95;schema&#46;order&#46;order&#95;id' x='547' y='311' onmouseover="hghl(['order_product_order_op','ledger_schema.order_product.order_id','order_tag_order_ot','ledger_schema.order_tag.order_id'])" onmouseout="uhghl(['order_product_order_op','ledger_schema.order_product.order_id','order_tag_order_ot','ledger_schema.order_tag.order_id'])">order&#95;id</text><title>&#10697;  order_id
+<rect id='depict_ledger&#95;schema&#46;order' class='entity' style='stroke:none;' x='944' y='264' width='160' height='160' rx='4' ry='4' />
+<path d='M 944 292 L 944 268 Q 944 264 948 264 L 1100 264 Q 1104 264 1104 268 L 1104 292 L944 292 ' style='fill:url(#tbg_C7F4BE);stroke-width:0;' />
+<rect class='entity' x='944' y='264' width='160' height='160' rx='4' ry='4' style='fill:none;stroke:#E3F2E1'/>
+<a xlink:href='#ledger_schema.order'><text x='1003' y='283' >order</text><title>Table ledger_schema.order</title></a>
+  <use id='nn' x='946' y='301' xlink:href='#nn'/><use id='pk' x='946' y='300' xlink:href='#pk'><title>&#x1F511;  Pk pk_order ( order_id ) </title></use><a xlink:href='#ledger_schema.order_order_id'><text id='ledger&#95;schema&#46;order&#46;order&#95;id' x='963' y='311' onmouseover="hghl(['order_discount_order_od','ledger_schema.order_discount.order_id','order_product_order_op','ledger_schema.order_product.order_id','order_tag_order_ot','ledger_schema.order_tag.order_id'])" onmouseout="uhghl(['order_discount_order_od','ledger_schema.order_discount.order_id','order_product_order_op','ledger_schema.order_product.order_id','order_tag_order_ot','ledger_schema.order_tag.order_id'])">order&#95;id</text><title>&#10697;  order_id
      * varchar(45)
+ &#8601; order_discount( order_id )
  &#8601; order_product( order_id )
  &#8601; order_tag( order_id )</title></a>
-<a xlink:href='#ledger_schema.order.order_id'><use id='ref' x='676' y='300' xlink:href='#ref'/><title>&#x1F517;  Referred by order_product ( order_id ) 
+<a xlink:href='#ledger_schema.order.order_id'><use id='ref' x='1092' y='300' xlink:href='#ref'/><title>&#x1F517;  Referred by order_discount ( order_id ) 
+Referred by order_product ( order_id ) 
 Referred by order_tag ( order_id ) </title></a>
-  <use id='nn' x='530' y='317' xlink:href='#nn'/><use id='idx' x='530' y='316' xlink:href='#idx'><title>&#x1F50D;  user_order_idx ( user_id ) </title></use><a xlink:href='#ledger_schema.order_user_id'><text id='ledger&#95;schema&#46;order&#46;user&#95;id' x='547' y='327' onmouseover="hghl(['order_user_order','ledger_schema.user.user_id'])" onmouseout="uhghl(['order_user_order','ledger_schema.user.user_id'])">user&#95;id</text><title>&#10697;  user_id
+  <use id='nn' x='946' y='317' xlink:href='#nn'/><use id='idx' x='946' y='316' xlink:href='#idx'><title>&#x1F50D;  user_order_idx ( user_id ) </title></use><a xlink:href='#ledger_schema.order_user_id'><text id='ledger&#95;schema&#46;order&#46;user&#95;id' x='963' y='327' onmouseover="hghl(['order_user_order','ledger_schema.user.user_id'])" onmouseout="uhghl(['order_user_order','ledger_schema.user.user_id'])">user&#95;id</text><title>&#10697;  user_id
      * varchar(45)
  &#8599; order( user_id )</title></a>
-<a xlink:href='#ledger_schema.order.user_id'><use id='fk' x='676' y='316' xlink:href='#fk'/><title>&#x1F517;  References user ( user_id ) </title></a>
-  <use id='nn' x='530' y='333' xlink:href='#nn'/><use id='idx' x='530' y='332' xlink:href='#idx'><title>&#x1F50D;  staff_order_idx ( staff_id ) </title></use><a xlink:href='#ledger_schema.order_staff_id'><text id='ledger&#95;schema&#46;order&#46;staff&#95;id' x='547' y='343' onmouseover="hghl(['order_staff_order','ledger_schema.staff.staff_id'])" onmouseout="uhghl(['order_staff_order','ledger_schema.staff.staff_id'])">staff&#95;id</text><title>&#10697;  staff_id
+<a xlink:href='#ledger_schema.order.user_id'><use id='fk' x='1092' y='316' xlink:href='#fk'/><title>&#x1F517;  References user ( user_id ) </title></a>
+  <use id='nn' x='946' y='333' xlink:href='#nn'/><use id='idx' x='946' y='332' xlink:href='#idx'><title>&#x1F50D;  staff_order_idx ( staff_id ) </title></use><a xlink:href='#ledger_schema.order_staff_id'><text id='ledger&#95;schema&#46;order&#46;staff&#95;id' x='963' y='343' onmouseover="hghl(['order_staff_order','ledger_schema.staff.staff_id'])" onmouseout="uhghl(['order_staff_order','ledger_schema.staff.staff_id'])">staff&#95;id</text><title>&#10697;  staff_id
      * varchar(45)
  &#8599; order( staff_id )</title></a>
-<a xlink:href='#ledger_schema.order.staff_id'><use id='fk' x='676' y='332' xlink:href='#fk'/><title>&#x1F517;  References staff ( staff_id ) </title></a>
-  <a xlink:href='#ledger_schema.order_order_discount'><text id='ledger&#95;schema&#46;order&#46;order&#95;discount' x='547' y='359'>order&#95;discount</text><title>&#10697;  order_discount
+<a xlink:href='#ledger_schema.order.staff_id'><use id='fk' x='1092' y='332' xlink:href='#fk'/><title>&#x1F517;  References staff ( staff_id ) </title></a>
+  <a xlink:href='#ledger_schema.order_order_discount'><text id='ledger&#95;schema&#46;order&#46;order&#95;discount' x='963' y='359'>order&#95;discount</text><title>&#10697;  order_discount
      int</title></a>
-<text x='685' y='356' text-anchor='end' class='colType'>&#35;</text>  <a xlink:href='#ledger_schema.order_order_note'><text id='ledger&#95;schema&#46;order&#46;order&#95;note' x='547' y='375'>order&#95;note</text><title>&#10697;  order_note
+<text x='1101' y='356' text-anchor='end' class='colType'>&#35;</text>  <a xlink:href='#ledger_schema.order_order_note'><text id='ledger&#95;schema&#46;order&#46;order&#95;note' x='963' y='375'>order&#95;note</text><title>&#10697;  order_note
      varchar(60)</title></a>
-<text x='685' y='372' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.order_order_create_time'><text id='ledger&#95;schema&#46;order&#46;order&#95;create&#95;time' x='547' y='391'>order&#95;create&#95;time</text><title>&#10697;  order_create_time
+<text x='1101' y='372' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.order_order_create_time'><text id='ledger&#95;schema&#46;order&#46;order&#95;create&#95;time' x='963' y='391'>order&#95;create&#95;time</text><title>&#10697;  order_create_time
      datetime</title></a>
-<text x='685' y='388' text-anchor='end' class='colType'>d</text>  <a xlink:href='#ledger_schema.order_order_total_price'><text id='ledger&#95;schema&#46;order&#46;order&#95;total&#95;price' x='547' y='407'>order&#95;total&#95;price</text><title>&#10697;  order_total_price
+<text x='1101' y='388' text-anchor='end' class='colType'>d</text>  <a xlink:href='#ledger_schema.order_order_total_price'><text id='ledger&#95;schema&#46;order&#46;order&#95;total&#95;price' x='963' y='407'>order&#95;total&#95;price</text><title>&#10697;  order_total_price
      int</title></a>
-<text x='685' y='404' text-anchor='end' class='colType'>&#35;</text>
+<text x='1101' y='404' text-anchor='end' class='colType'>&#35;</text>
+<!-- == Table 'order_discount' == -->
+<rect id='depict_ledger&#95;schema&#46;order&#95;discount' class='entity' style='stroke:none;' x='528' y='536' width='112' height='80' rx='4' ry='4' />
+<path d='M 528 564 L 528 540 Q 528 536 532 536 L 636 536 Q 640 536 640 540 L 640 564 L528 564 ' style='fill:url(#tbg_BED3F4);stroke-width:0;' />
+<rect class='entity' x='528' y='536' width='112' height='80' rx='4' ry='4' style='fill:none;stroke:#E1E7F2'/>
+<a xlink:href='#ledger_schema.order_discount'><text x='533' y='555' >order&#95;discount</text><title>Table ledger_schema.order_discount</title></a>
+  <use id='nn' x='530' y='573' xlink:href='#nn'/><use id='pk' x='530' y='572' xlink:href='#pk'><title>&#x1F511;  Pk pk_order_discount ( order_id, discount_id ) &#x1F50D;  order_od_idx ( order_id ) </title></use><a xlink:href='#ledger_schema.order_discount_order_id'><text id='ledger&#95;schema&#46;order&#95;discount&#46;order&#95;id' x='547' y='583' onmouseover="hghl(['order_discount_order_od','ledger_schema.order.order_id'])" onmouseout="uhghl(['order_discount_order_od','ledger_schema.order.order_id'])">order&#95;id</text><title>&#10697;  order_id
+     * varchar(45)
+ &#8599; order_discount( order_id )</title></a>
+<a xlink:href='#ledger_schema.order_discount.order_id'><use id='fk' x='628' y='572' xlink:href='#fk'/><title>&#x1F517;  References order ( order_id ) </title></a>
+  <use id='nn' x='530' y='589' xlink:href='#nn'/><use id='pk' x='530' y='588' xlink:href='#pk'><title>&#x1F511;  Pk pk_order_discount ( order_id, discount_id ) &#x1F50D;  discount_od ( discount_id ) </title></use><a xlink:href='#ledger_schema.order_discount_discount_id'><text id='ledger&#95;schema&#46;order&#95;discount&#46;discount&#95;id' x='547' y='599' onmouseover="hghl(['order_discount_discount_od','ledger_schema.discount.discount_id'])" onmouseout="uhghl(['order_discount_discount_od','ledger_schema.discount.discount_id'])">discount&#95;id</text><title>&#10697;  discount_id
+     * varchar(45)
+ &#8599; order_discount( discount_id )</title></a>
+<a xlink:href='#ledger_schema.order_discount.discount_id'><use id='fk' x='628' y='588' xlink:href='#fk'/><title>&#x1F517;  References discount ( discount_id ) </title></a>
+
 <!-- == Table 'order_product' == -->
-<rect id='depict_ledger&#95;schema&#46;order&#95;product' class='entity' style='stroke:none;' x='320' y='72' width='112' height='96' rx='4' ry='4' />
-<path d='M 320 100 L 320 76 Q 320 72 324 72 L 428 72 Q 432 72 432 76 L 432 100 L320 100 ' style='fill:url(#tbg_BED3F4);stroke-width:0;' />
-<rect class='entity' x='320' y='72' width='112' height='96' rx='4' ry='4' style='fill:none;stroke:#E1E7F2'/>
-<a xlink:href='#ledger_schema.order_product'><text x='327' y='91' >order&#95;product</text><title>Table ledger_schema.order_product</title></a>
-  <use id='nn' x='322' y='109' xlink:href='#nn'/><use id='pk' x='322' y='108' xlink:href='#pk'><title>&#x1F511;  Pk pk_order_product ( order_id, product_id ) </title></use><a xlink:href='#ledger_schema.order_product_order_id'><text id='ledger&#95;schema&#46;order&#95;product&#46;order&#95;id' x='339' y='119' onmouseover="hghl(['order_product_order_op','ledger_schema.order.order_id'])" onmouseout="uhghl(['order_product_order_op','ledger_schema.order.order_id'])">order&#95;id</text><title>&#10697;  order_id
+<rect id='depict_ledger&#95;schema&#46;order&#95;product' class='entity' style='stroke:none;' x='1184' y='520' width='112' height='96' rx='4' ry='4' />
+<path d='M 1184 548 L 1184 524 Q 1184 520 1188 520 L 1292 520 Q 1296 520 1296 524 L 1296 548 L1184 548 ' style='fill:url(#tbg_C7F4BE);stroke-width:0;' />
+<rect class='entity' x='1184' y='520' width='112' height='96' rx='4' ry='4' style='fill:none;stroke:#E3F2E1'/>
+<a xlink:href='#ledger_schema.order_product'><text x='1191' y='539' >order&#95;product</text><title>Table ledger_schema.order_product</title></a>
+  <use id='nn' x='1186' y='557' xlink:href='#nn'/><use id='pk' x='1186' y='556' xlink:href='#pk'><title>&#x1F511;  Pk pk_order_product ( order_id, product_id ) </title></use><a xlink:href='#ledger_schema.order_product_order_id'><text id='ledger&#95;schema&#46;order&#95;product&#46;order&#95;id' x='1203' y='567' onmouseover="hghl(['order_product_order_op','ledger_schema.order.order_id'])" onmouseout="uhghl(['order_product_order_op','ledger_schema.order.order_id'])">order&#95;id</text><title>&#10697;  order_id
      * varchar(45)
  &#8599; order_product( order_id )</title></a>
-<a xlink:href='#ledger_schema.order_product.order_id'><use id='fk' x='420' y='108' xlink:href='#fk'/><title>&#x1F517;  References order ( order_id ) </title></a>
-  <use id='nn' x='322' y='125' xlink:href='#nn'/><use id='pk' x='322' y='124' xlink:href='#pk'><title>&#x1F511;  Pk pk_order_product ( order_id, product_id ) &#x1F50D;  product_op_idx ( product_id ) </title></use><a xlink:href='#ledger_schema.order_product_product_id'><text id='ledger&#95;schema&#46;order&#95;product&#46;product&#95;id' x='339' y='135' onmouseover="hghl(['order_product_product_op','ledger_schema.product.product_id'])" onmouseout="uhghl(['order_product_product_op','ledger_schema.product.product_id'])">product&#95;id</text><title>&#10697;  product_id
+<a xlink:href='#ledger_schema.order_product.order_id'><use id='fk' x='1284' y='556' xlink:href='#fk'/><title>&#x1F517;  References order ( order_id ) </title></a>
+  <use id='nn' x='1186' y='573' xlink:href='#nn'/><use id='pk' x='1186' y='572' xlink:href='#pk'><title>&#x1F511;  Pk pk_order_product ( order_id, product_id ) &#x1F50D;  product_op_idx ( product_id ) </title></use><a xlink:href='#ledger_schema.order_product_product_id'><text id='ledger&#95;schema&#46;order&#95;product&#46;product&#95;id' x='1203' y='583' onmouseover="hghl(['order_product_product_op','ledger_schema.product.product_id'])" onmouseout="uhghl(['order_product_product_op','ledger_schema.product.product_id'])">product&#95;id</text><title>&#10697;  product_id
      * varchar(45)
  &#8599; order_product( product_id )</title></a>
-<a xlink:href='#ledger_schema.order_product.product_id'><use id='fk' x='420' y='124' xlink:href='#fk'/><title>&#x1F517;  References product ( product_id ) </title></a>
-  <a xlink:href='#ledger_schema.order_product_op_amount'><text id='ledger&#95;schema&#46;order&#95;product&#46;op&#95;amount' x='339' y='151'>op&#95;amount</text><title>&#10697;  op_amount
+<a xlink:href='#ledger_schema.order_product.product_id'><use id='fk' x='1284' y='572' xlink:href='#fk'/><title>&#x1F517;  References product ( product_id ) </title></a>
+  <a xlink:href='#ledger_schema.order_product_op_amount'><text id='ledger&#95;schema&#46;order&#95;product&#46;op&#95;amount' x='1203' y='599'>op&#95;amount</text><title>&#10697;  op_amount
      int</title></a>
-<text x='429' y='148' text-anchor='end' class='colType'>&#35;</text>
+<text x='1293' y='596' text-anchor='end' class='colType'>&#35;</text>
 <!-- == Table 'order_tag' == -->
-<rect id='depict_ledger&#95;schema&#46;order&#95;tag' class='entity' style='stroke:none;' x='768' y='264' width='96' height='80' rx='4' ry='4' />
-<path d='M 768 292 L 768 268 Q 768 264 772 264 L 860 264 Q 864 264 864 268 L 864 292 L768 292 ' style='fill:url(#tbg_BED3F4);stroke-width:0;' />
-<rect class='entity' x='768' y='264' width='96' height='80' rx='4' ry='4' style='fill:none;stroke:#E1E7F2'/>
-<a xlink:href='#ledger_schema.order_tag'><text x='782' y='283' >order&#95;tag</text><title>Table ledger_schema.order_tag</title></a>
-  <use id='nn' x='770' y='301' xlink:href='#nn'/><use id='pk' x='770' y='300' xlink:href='#pk'><title>&#x1F511;  Pk pk_order_tag ( order_id, tag_id ) </title></use><a xlink:href='#ledger_schema.order_tag_order_id'><text id='ledger&#95;schema&#46;order&#95;tag&#46;order&#95;id' x='787' y='311' onmouseover="hghl(['order_tag_order_ot','ledger_schema.order.order_id'])" onmouseout="uhghl(['order_tag_order_ot','ledger_schema.order.order_id'])">order&#95;id</text><title>&#10697;  order_id
+<rect id='depict_ledger&#95;schema&#46;order&#95;tag' class='entity' style='stroke:none;' x='768' y='520' width='96' height='80' rx='4' ry='4' />
+<path d='M 768 548 L 768 524 Q 768 520 772 520 L 860 520 Q 864 520 864 524 L 864 548 L768 548 ' style='fill:url(#tbg_C7F4BE);stroke-width:0;' />
+<rect class='entity' x='768' y='520' width='96' height='80' rx='4' ry='4' style='fill:none;stroke:#E3F2E1'/>
+<a xlink:href='#ledger_schema.order_tag'><text x='782' y='539' >order&#95;tag</text><title>Table ledger_schema.order_tag</title></a>
+  <use id='nn' x='770' y='557' xlink:href='#nn'/><use id='pk' x='770' y='556' xlink:href='#pk'><title>&#x1F511;  Pk pk_order_tag ( order_id, tag_id ) </title></use><a xlink:href='#ledger_schema.order_tag_order_id'><text id='ledger&#95;schema&#46;order&#95;tag&#46;order&#95;id' x='787' y='567' onmouseover="hghl(['order_tag_order_ot','ledger_schema.order.order_id'])" onmouseout="uhghl(['order_tag_order_ot','ledger_schema.order.order_id'])">order&#95;id</text><title>&#10697;  order_id
      * varchar(45)
  &#8599; order_tag( order_id )</title></a>
-<a xlink:href='#ledger_schema.order_tag.order_id'><use id='fk' x='852' y='300' xlink:href='#fk'/><title>&#x1F517;  References order ( order_id ) </title></a>
-  <use id='nn' x='770' y='317' xlink:href='#nn'/><use id='pk' x='770' y='316' xlink:href='#pk'><title>&#x1F511;  Pk pk_order_tag ( order_id, tag_id ) &#x1F50D;  tag_ot_idx ( tag_id ) </title></use><a xlink:href='#ledger_schema.order_tag_tag_id'><text id='ledger&#95;schema&#46;order&#95;tag&#46;tag&#95;id' x='787' y='327' onmouseover="hghl(['order_tag_tag_ot','ledger_schema.tag.tag_id'])" onmouseout="uhghl(['order_tag_tag_ot','ledger_schema.tag.tag_id'])">tag&#95;id</text><title>&#10697;  tag_id
+<a xlink:href='#ledger_schema.order_tag.order_id'><use id='fk' x='852' y='556' xlink:href='#fk'/><title>&#x1F517;  References order ( order_id ) </title></a>
+  <use id='nn' x='770' y='573' xlink:href='#nn'/><use id='pk' x='770' y='572' xlink:href='#pk'><title>&#x1F511;  Pk pk_order_tag ( order_id, tag_id ) &#x1F50D;  tag_ot_idx ( tag_id ) </title></use><a xlink:href='#ledger_schema.order_tag_tag_id'><text id='ledger&#95;schema&#46;order&#95;tag&#46;tag&#95;id' x='787' y='583' onmouseover="hghl(['order_tag_tag_ot','ledger_schema.tag.tag_id'])" onmouseout="uhghl(['order_tag_tag_ot','ledger_schema.tag.tag_id'])">tag&#95;id</text><title>&#10697;  tag_id
      * varchar(45)
  &#8599; order_tag( tag_id )</title></a>
-<a xlink:href='#ledger_schema.order_tag.tag_id'><use id='fk' x='852' y='316' xlink:href='#fk'/><title>&#x1F517;  References tag ( tag_id ) </title></a>
+<a xlink:href='#ledger_schema.order_tag.tag_id'><use id='fk' x='852' y='572' xlink:href='#fk'/><title>&#x1F517;  References tag ( tag_id ) </title></a>
 
 <!-- == Table 'preorder' == -->
-<rect id='depict_ledger&#95;schema&#46;preorder' class='entity' style='stroke:none;' x='1200' y='72' width='192' height='160' rx='4' ry='4' />
-<path d='M 1200 100 L 1200 76 Q 1200 72 1204 72 L 1388 72 Q 1392 72 1392 76 L 1392 100 L1200 100 ' style='fill:url(#tbg_C7F4BE);stroke-width:0;' />
-<rect class='entity' x='1200' y='72' width='192' height='160' rx='4' ry='4' style='fill:none;stroke:#E3F2E1'/>
-<a xlink:href='#ledger_schema.preorder'><text x='1265' y='91' >preorder</text><title>Table ledger_schema.preorder</title></a>
-  <use id='nn' x='1202' y='109' xlink:href='#nn'/><use id='pk' x='1202' y='108' xlink:href='#pk'><title>&#x1F511;  Pk pk_preorder ( preorder_id ) </title></use><a xlink:href='#ledger_schema.preorder_preorder_id'><text id='ledger&#95;schema&#46;preorder&#46;preorder&#95;id' x='1219' y='119' onmouseover="hghl(['preorder_product_preorder_pp','ledger_schema.preorder_product.preorder_id'])" onmouseout="uhghl(['preorder_product_preorder_pp','ledger_schema.preorder_product.preorder_id'])">preorder&#95;id</text><title>&#10697;  preorder_id
+<rect id='depict_ledger&#95;schema&#46;preorder' class='entity' style='stroke:none;' x='48' y='536' width='192' height='160' rx='4' ry='4' />
+<path d='M 48 564 L 48 540 Q 48 536 52 536 L 236 536 Q 240 536 240 540 L 240 564 L48 564 ' style='fill:url(#tbg_BED3F4);stroke-width:0;' />
+<rect class='entity' x='48' y='536' width='192' height='160' rx='4' ry='4' style='fill:none;stroke:#E1E7F2'/>
+<a xlink:href='#ledger_schema.preorder'><text x='113' y='555' >preorder</text><title>Table ledger_schema.preorder</title></a>
+  <use id='nn' x='50' y='573' xlink:href='#nn'/><use id='pk' x='50' y='572' xlink:href='#pk'><title>&#x1F511;  Pk pk_preorder ( preorder_id ) </title></use><a xlink:href='#ledger_schema.preorder_preorder_id'><text id='ledger&#95;schema&#46;preorder&#46;preorder&#95;id' x='67' y='583' onmouseover="hghl(['preorder_product_preorder_pp','ledger_schema.preorder_product.preorder_id'])" onmouseout="uhghl(['preorder_product_preorder_pp','ledger_schema.preorder_product.preorder_id'])">preorder&#95;id</text><title>&#10697;  preorder_id
      * varchar(45)
  &#8601; preorder_product( preorder_id )</title></a>
-<a xlink:href='#ledger_schema.preorder.preorder_id'><use id='ref' x='1380' y='108' xlink:href='#ref'/><title>&#x1F517;  Referred by preorder_product ( preorder_id ) </title></a>
-  <use id='nn' x='1202' y='125' xlink:href='#nn'/><use id='idx' x='1202' y='124' xlink:href='#idx'><title>&#x1F50D;  user_preorder_idx ( user_id ) </title></use><a xlink:href='#ledger_schema.preorder_user_id'><text id='ledger&#95;schema&#46;preorder&#46;user&#95;id' x='1219' y='135' onmouseover="hghl(['preorder_user_preorder','ledger_schema.user.user_id'])" onmouseout="uhghl(['preorder_user_preorder','ledger_schema.user.user_id'])">user&#95;id</text><title>&#10697;  user_id
+<a xlink:href='#ledger_schema.preorder.preorder_id'><use id='ref' x='228' y='572' xlink:href='#ref'/><title>&#x1F517;  Referred by preorder_product ( preorder_id ) </title></a>
+  <use id='nn' x='50' y='589' xlink:href='#nn'/><use id='idx' x='50' y='588' xlink:href='#idx'><title>&#x1F50D;  user_preorder_idx ( user_id ) </title></use><a xlink:href='#ledger_schema.preorder_user_id'><text id='ledger&#95;schema&#46;preorder&#46;user&#95;id' x='67' y='599' onmouseover="hghl(['preorder_user_preorder','ledger_schema.user.user_id'])" onmouseout="uhghl(['preorder_user_preorder','ledger_schema.user.user_id'])">user&#95;id</text><title>&#10697;  user_id
      * varchar(45)
  &#8599; preorder( user_id )</title></a>
-<a xlink:href='#ledger_schema.preorder.user_id'><use id='fk' x='1380' y='124' xlink:href='#fk'/><title>&#x1F517;  References user ( user_id ) </title></a>
-  <a xlink:href='#ledger_schema.preorder_preorder_contact'><text id='ledger&#95;schema&#46;preorder&#46;preorder&#95;contact' x='1219' y='151'>preorder&#95;contact</text><title>&#10697;  preorder_contact
+<a xlink:href='#ledger_schema.preorder.user_id'><use id='fk' x='228' y='588' xlink:href='#fk'/><title>&#x1F517;  References user ( user_id ) </title></a>
+  <a xlink:href='#ledger_schema.preorder_preorder_contact'><text id='ledger&#95;schema&#46;preorder&#46;preorder&#95;contact' x='67' y='615'>preorder&#95;contact</text><title>&#10697;  preorder_contact
      varchar(45)</title></a>
-<text x='1389' y='148' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.preorder_preorder_create_time'><text id='ledger&#95;schema&#46;preorder&#46;preorder&#95;create&#95;time' x='1219' y='167'>preorder&#95;create&#95;time</text><title>&#10697;  preorder_create_time
+<text x='237' y='612' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.preorder_preorder_create_time'><text id='ledger&#95;schema&#46;preorder&#46;preorder&#95;create&#95;time' x='67' y='631'>preorder&#95;create&#95;time</text><title>&#10697;  preorder_create_time
      datetime</title></a>
-<text x='1389' y='164' text-anchor='end' class='colType'>d</text>  <use id='nn' x='1202' y='173' xlink:href='#nn'/><a xlink:href='#ledger_schema.preorder_preorder_is_picked'><text id='ledger&#95;schema&#46;preorder&#46;preorder&#95;is&#95;picked' x='1219' y='183'>preorder&#95;is&#95;picked</text><title>&#10697;  preorder_is_picked
+<text x='237' y='628' text-anchor='end' class='colType'>d</text>  <use id='nn' x='50' y='637' xlink:href='#nn'/><a xlink:href='#ledger_schema.preorder_preorder_is_picked'><text id='ledger&#95;schema&#46;preorder&#46;preorder&#95;is&#95;picked' x='67' y='647'>preorder&#95;is&#95;picked</text><title>&#10697;  preorder_is_picked
      * tinyint default &apos;0&apos;</title></a>
-<text x='1389' y='180' text-anchor='end' class='colType'>&#35;</text>  <a xlink:href='#ledger_schema.preorder_preorder_note'><text id='ledger&#95;schema&#46;preorder&#46;preorder&#95;note' x='1219' y='199'>preorder&#95;note</text><title>&#10697;  preorder_note
+<text x='237' y='644' text-anchor='end' class='colType'>&#35;</text>  <a xlink:href='#ledger_schema.preorder_preorder_note'><text id='ledger&#95;schema&#46;preorder&#46;preorder&#95;note' x='67' y='663'>preorder&#95;note</text><title>&#10697;  preorder_note
      varchar(60)</title></a>
-<text x='1389' y='196' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.preorder_preorder_pick_up_time'><text id='ledger&#95;schema&#46;preorder&#46;preorder&#95;pick&#95;up&#95;time' x='1219' y='215'>preorder&#95;pick&#95;up&#95;time</text><title>&#10697;  preorder_pick_up_time
+<text x='237' y='660' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.preorder_preorder_pick_up_time'><text id='ledger&#95;schema&#46;preorder&#46;preorder&#95;pick&#95;up&#95;time' x='67' y='679'>preorder&#95;pick&#95;up&#95;time</text><title>&#10697;  preorder_pick_up_time
      datetime</title></a>
-<text x='1389' y='212' text-anchor='end' class='colType'>d</text>
+<text x='237' y='676' text-anchor='end' class='colType'>d</text>
 <!-- == Table 'preorder_product' == -->
-<rect id='depict_ledger&#95;schema&#46;preorder&#95;product' class='entity' style='stroke:none;' x='1456' y='72' width='128' height='96' rx='4' ry='4' />
-<path d='M 1456 100 L 1456 76 Q 1456 72 1460 72 L 1580 72 Q 1584 72 1584 76 L 1584 100 L1456 100 ' style='fill:url(#tbg_C7F4BE);stroke-width:0;' />
-<rect class='entity' x='1456' y='72' width='128' height='96' rx='4' ry='4' style='fill:none;stroke:#E3F2E1'/>
-<a xlink:href='#ledger_schema.preorder_product'><text x='1461' y='91' >preorder&#95;product</text><title>Table ledger_schema.preorder_product</title></a>
-  <use id='nn' x='1458' y='109' xlink:href='#nn'/><use id='pk' x='1458' y='108' xlink:href='#pk'><title>&#x1F511;  Pk pk_preorder_product ( preorder_id, product_id ) </title></use><a xlink:href='#ledger_schema.preorder_product_preorder_id'><text id='ledger&#95;schema&#46;preorder&#95;product&#46;preorder&#95;id' x='1475' y='119' onmouseover="hghl(['preorder_product_preorder_pp','ledger_schema.preorder.preorder_id'])" onmouseout="uhghl(['preorder_product_preorder_pp','ledger_schema.preorder.preorder_id'])">preorder&#95;id</text><title>&#10697;  preorder_id
+<rect id='depict_ledger&#95;schema&#46;preorder&#95;product' class='entity' style='stroke:none;' x='304' y='792' width='128' height='96' rx='4' ry='4' />
+<path d='M 304 820 L 304 796 Q 304 792 308 792 L 428 792 Q 432 792 432 796 L 432 820 L304 820 ' style='fill:url(#tbg_BED3F4);stroke-width:0;' />
+<rect class='entity' x='304' y='792' width='128' height='96' rx='4' ry='4' style='fill:none;stroke:#E1E7F2'/>
+<a xlink:href='#ledger_schema.preorder_product'><text x='309' y='811' >preorder&#95;product</text><title>Table ledger_schema.preorder_product</title></a>
+  <use id='nn' x='306' y='829' xlink:href='#nn'/><use id='pk' x='306' y='828' xlink:href='#pk'><title>&#x1F511;  Pk pk_preorder_product ( preorder_id, product_id ) </title></use><a xlink:href='#ledger_schema.preorder_product_preorder_id'><text id='ledger&#95;schema&#46;preorder&#95;product&#46;preorder&#95;id' x='323' y='839' onmouseover="hghl(['preorder_product_preorder_pp','ledger_schema.preorder.preorder_id'])" onmouseout="uhghl(['preorder_product_preorder_pp','ledger_schema.preorder.preorder_id'])">preorder&#95;id</text><title>&#10697;  preorder_id
      * varchar(45)
  &#8599; preorder_product( preorder_id )</title></a>
-<a xlink:href='#ledger_schema.preorder_product.preorder_id'><use id='fk' x='1572' y='108' xlink:href='#fk'/><title>&#x1F517;  References preorder ( preorder_id ) </title></a>
-  <use id='nn' x='1458' y='125' xlink:href='#nn'/><use id='pk' x='1458' y='124' xlink:href='#pk'><title>&#x1F511;  Pk pk_preorder_product ( preorder_id, product_id ) &#x1F50D;  product_pp_idx ( product_id ) </title></use><a xlink:href='#ledger_schema.preorder_product_product_id'><text id='ledger&#95;schema&#46;preorder&#95;product&#46;product&#95;id' x='1475' y='135' onmouseover="hghl(['preorder_product_product_pp','ledger_schema.product.product_id'])" onmouseout="uhghl(['preorder_product_product_pp','ledger_schema.product.product_id'])">product&#95;id</text><title>&#10697;  product_id
+<a xlink:href='#ledger_schema.preorder_product.preorder_id'><use id='fk' x='420' y='828' xlink:href='#fk'/><title>&#x1F517;  References preorder ( preorder_id ) </title></a>
+  <use id='nn' x='306' y='845' xlink:href='#nn'/><use id='pk' x='306' y='844' xlink:href='#pk'><title>&#x1F511;  Pk pk_preorder_product ( preorder_id, product_id ) &#x1F50D;  product_pp_idx ( product_id ) </title></use><a xlink:href='#ledger_schema.preorder_product_product_id'><text id='ledger&#95;schema&#46;preorder&#95;product&#46;product&#95;id' x='323' y='855' onmouseover="hghl(['preorder_product_product_pp','ledger_schema.product.product_id'])" onmouseout="uhghl(['preorder_product_product_pp','ledger_schema.product.product_id'])">product&#95;id</text><title>&#10697;  product_id
      * varchar(45)
  &#8599; preorder_product( product_id )</title></a>
-<a xlink:href='#ledger_schema.preorder_product.product_id'><use id='fk' x='1572' y='124' xlink:href='#fk'/><title>&#x1F517;  References product ( product_id ) </title></a>
-  <use id='nn' x='1458' y='141' xlink:href='#nn'/><a xlink:href='#ledger_schema.preorder_product_amount'><text id='ledger&#95;schema&#46;preorder&#95;product&#46;amount' x='1475' y='151'>amount</text><title>&#10697;  amount
+<a xlink:href='#ledger_schema.preorder_product.product_id'><use id='fk' x='420' y='844' xlink:href='#fk'/><title>&#x1F517;  References product ( product_id ) </title></a>
+  <use id='nn' x='306' y='861' xlink:href='#nn'/><a xlink:href='#ledger_schema.preorder_product_amount'><text id='ledger&#95;schema&#46;preorder&#95;product&#46;amount' x='323' y='871'>amount</text><title>&#10697;  amount
      * int</title></a>
-<text x='1581' y='148' text-anchor='end' class='colType'>&#35;</text>
+<text x='429' y='868' text-anchor='end' class='colType'>&#35;</text>
 <!-- == Table 'product' == -->
-<rect id='depict_ledger&#95;schema&#46;product' class='entity' style='stroke:none;' x='976' y='72' width='144' height='160' rx='4' ry='4' />
-<path d='M 976 100 L 976 76 Q 976 72 980 72 L 1116 72 Q 1120 72 1120 76 L 1120 100 L976 100 ' style='fill:url(#tbg_C7F4BE);stroke-width:0;' />
-<rect class='entity' x='976' y='72' width='144' height='160' rx='4' ry='4' style='fill:none;stroke:#E3F2E1'/>
-<a xlink:href='#ledger_schema.product'><text x='1020' y='91' >product</text><title>Table ledger_schema.product</title></a>
-  <use id='nn' x='978' y='109' xlink:href='#nn'/><use id='pk' x='978' y='108' xlink:href='#pk'><title>&#x1F511;  Pk pk_product ( product_id ) </title></use><a xlink:href='#ledger_schema.product_product_id'><text id='ledger&#95;schema&#46;product&#46;product&#95;id' x='995' y='119' onmouseover="hghl(['order_product_product_op','ledger_schema.order_product.product_id','preorder_product_product_pp','ledger_schema.preorder_product.product_id'])" onmouseout="uhghl(['order_product_product_op','ledger_schema.order_product.product_id','preorder_product_product_pp','ledger_schema.preorder_product.product_id'])">product&#95;id</text><title>&#10697;  product_id
+<rect id='depict_ledger&#95;schema&#46;product' class='entity' style='stroke:none;' x='304' y='264' width='144' height='160' rx='4' ry='4' />
+<path d='M 304 292 L 304 268 Q 304 264 308 264 L 444 264 Q 448 264 448 268 L 448 292 L304 292 ' style='fill:url(#tbg_BED3F4);stroke-width:0;' />
+<rect class='entity' x='304' y='264' width='144' height='160' rx='4' ry='4' style='fill:none;stroke:#E1E7F2'/>
+<a xlink:href='#ledger_schema.product'><text x='348' y='283' >product</text><title>Table ledger_schema.product</title></a>
+  <use id='nn' x='306' y='301' xlink:href='#nn'/><use id='pk' x='306' y='300' xlink:href='#pk'><title>&#x1F511;  Pk pk_product ( product_id ) </title></use><a xlink:href='#ledger_schema.product_product_id'><text id='ledger&#95;schema&#46;product&#46;product&#95;id' x='323' y='311' onmouseover="hghl(['order_product_product_op','ledger_schema.order_product.product_id','preorder_product_product_pp','ledger_schema.preorder_product.product_id'])" onmouseout="uhghl(['order_product_product_op','ledger_schema.order_product.product_id','preorder_product_product_pp','ledger_schema.preorder_product.product_id'])">product&#95;id</text><title>&#10697;  product_id
      * varchar(45)
  &#8601; order_product( product_id )
  &#8601; preorder_product( product_id )</title></a>
-<a xlink:href='#ledger_schema.product.product_id'><use id='ref' x='1108' y='108' xlink:href='#ref'/><title>&#x1F517;  Referred by order_product ( product_id ) 
+<a xlink:href='#ledger_schema.product.product_id'><use id='ref' x='436' y='300' xlink:href='#ref'/><title>&#x1F517;  Referred by order_product ( product_id ) 
 Referred by preorder_product ( product_id ) </title></a>
-  <use id='nn' x='978' y='125' xlink:href='#nn'/><use id='idx' x='978' y='124' xlink:href='#idx'><title>&#x1F50D;  user_product_idx ( user_id ) </title></use><a xlink:href='#ledger_schema.product_user_id'><text id='ledger&#95;schema&#46;product&#46;user&#95;id' x='995' y='135' onmouseover="hghl(['product_user_product','ledger_schema.user.user_id'])" onmouseout="uhghl(['product_user_product','ledger_schema.user.user_id'])">user&#95;id</text><title>&#10697;  user_id
+  <use id='nn' x='306' y='317' xlink:href='#nn'/><use id='idx' x='306' y='316' xlink:href='#idx'><title>&#x1F50D;  user_product_idx ( user_id ) </title></use><a xlink:href='#ledger_schema.product_user_id'><text id='ledger&#95;schema&#46;product&#46;user&#95;id' x='323' y='327' onmouseover="hghl(['product_user_product','ledger_schema.user.user_id'])" onmouseout="uhghl(['product_user_product','ledger_schema.user.user_id'])">user&#95;id</text><title>&#10697;  user_id
      * varchar(45)
  &#8599; product( user_id )</title></a>
-<a xlink:href='#ledger_schema.product.user_id'><use id='fk' x='1108' y='124' xlink:href='#fk'/><title>&#x1F517;  References user ( user_id ) </title></a>
-  <use id='nn' x='978' y='141' xlink:href='#nn'/><use id='idx' x='978' y='140' xlink:href='#idx'><title>&#x1F50D;  type_product_idx ( type_id ) </title></use><a xlink:href='#ledger_schema.product_type_id'><text id='ledger&#95;schema&#46;product&#46;type&#95;id' x='995' y='151' onmouseover="hghl(['product_type_product','ledger_schema.type.type_id'])" onmouseout="uhghl(['product_type_product','ledger_schema.type.type_id'])">type&#95;id</text><title>&#10697;  type_id
+<a xlink:href='#ledger_schema.product.user_id'><use id='fk' x='436' y='316' xlink:href='#fk'/><title>&#x1F517;  References user ( user_id ) </title></a>
+  <use id='nn' x='306' y='333' xlink:href='#nn'/><use id='idx' x='306' y='332' xlink:href='#idx'><title>&#x1F50D;  type_product_idx ( type_id ) </title></use><a xlink:href='#ledger_schema.product_type_id'><text id='ledger&#95;schema&#46;product&#46;type&#95;id' x='323' y='343' onmouseover="hghl(['product_type_product','ledger_schema.type.type_id'])" onmouseout="uhghl(['product_type_product','ledger_schema.type.type_id'])">type&#95;id</text><title>&#10697;  type_id
      * varchar(45)
  &#8599; product( type_id )</title></a>
-<a xlink:href='#ledger_schema.product.type_id'><use id='fk' x='1108' y='140' xlink:href='#fk'/><title>&#x1F517;  References type ( type_id ) </title></a>
-  <a xlink:href='#ledger_schema.product_product_name'><text id='ledger&#95;schema&#46;product&#46;product&#95;name' x='995' y='167'>product&#95;name</text><title>&#10697;  product_name
+<a xlink:href='#ledger_schema.product.type_id'><use id='fk' x='436' y='332' xlink:href='#fk'/><title>&#x1F517;  References type ( type_id ) </title></a>
+  <a xlink:href='#ledger_schema.product_product_name'><text id='ledger&#95;schema&#46;product&#46;product&#95;name' x='323' y='359'>product&#95;name</text><title>&#10697;  product_name
      varchar(45)</title></a>
-<text x='1117' y='164' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.product_product_price'><text id='ledger&#95;schema&#46;product&#46;product&#95;price' x='995' y='183'>product&#95;price</text><title>&#10697;  product_price
+<text x='445' y='356' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.product_product_price'><text id='ledger&#95;schema&#46;product&#46;product&#95;price' x='323' y='375'>product&#95;price</text><title>&#10697;  product_price
      int</title></a>
-<text x='1117' y='180' text-anchor='end' class='colType'>&#35;</text>  <a xlink:href='#ledger_schema.product_product_spec'><text id='ledger&#95;schema&#46;product&#46;product&#95;spec' x='995' y='199'>product&#95;spec</text><title>&#10697;  product_spec
+<text x='445' y='372' text-anchor='end' class='colType'>&#35;</text>  <a xlink:href='#ledger_schema.product_product_spec'><text id='ledger&#95;schema&#46;product&#46;product&#95;spec' x='323' y='391'>product&#95;spec</text><title>&#10697;  product_spec
      varchar(45)</title></a>
-<text x='1117' y='196' text-anchor='end' class='colType'>t</text>  <use id='nn' x='978' y='205' xlink:href='#nn'/><a xlink:href='#ledger_schema.product_product_enable'><text id='ledger&#95;schema&#46;product&#46;product&#95;enable' x='995' y='215'>product&#95;enable</text><title>&#10697;  product_enable
+<text x='445' y='388' text-anchor='end' class='colType'>t</text>  <use id='nn' x='306' y='397' xlink:href='#nn'/><a xlink:href='#ledger_schema.product_product_enable'><text id='ledger&#95;schema&#46;product&#46;product&#95;enable' x='323' y='407'>product&#95;enable</text><title>&#10697;  product_enable
      * tinyint default &apos;1&apos;</title></a>
-<text x='1117' y='212' text-anchor='end' class='colType'>&#35;</text>
+<text x='445' y='404' text-anchor='end' class='colType'>&#35;</text>
 <!-- == Table 'staff' == -->
-<rect id='depict_ledger&#95;schema&#46;staff' class='entity' style='stroke:none;' x='528' y='536' width='176' height='128' rx='4' ry='4' />
-<path d='M 528 564 L 528 540 Q 528 536 532 536 L 700 536 Q 704 536 704 540 L 704 564 L528 564 ' style='fill:url(#tbg_BED3F4);stroke-width:0;' />
-<rect class='entity' x='528' y='536' width='176' height='128' rx='4' ry='4' style='fill:none;stroke:#E1E7F2'/>
-<a xlink:href='#ledger_schema.staff'><text x='598' y='555' >staff</text><title>Table ledger_schema.staff</title></a>
-  <use id='nn' x='530' y='573' xlink:href='#nn'/><use id='pk' x='530' y='572' xlink:href='#pk'><title>&#x1F511;  Pk pk_staff ( staff_id ) </title></use><a xlink:href='#ledger_schema.staff_staff_id'><text id='ledger&#95;schema&#46;staff&#46;staff&#95;id' x='547' y='583' onmouseover="hghl(['order_staff_order','ledger_schema.order.staff_id'])" onmouseout="uhghl(['order_staff_order','ledger_schema.order.staff_id'])">staff&#95;id</text><title>&#10697;  staff_id
+<rect id='depict_ledger&#95;schema&#46;staff' class='entity' style='stroke:none;' x='1184' y='264' width='176' height='128' rx='4' ry='4' />
+<path d='M 1184 292 L 1184 268 Q 1184 264 1188 264 L 1356 264 Q 1360 264 1360 268 L 1360 292 L1184 292 ' style='fill:url(#tbg_C7F4BE);stroke-width:0;' />
+<rect class='entity' x='1184' y='264' width='176' height='128' rx='4' ry='4' style='fill:none;stroke:#E3F2E1'/>
+<a xlink:href='#ledger_schema.staff'><text x='1254' y='283' >staff</text><title>Table ledger_schema.staff</title></a>
+  <use id='nn' x='1186' y='301' xlink:href='#nn'/><use id='pk' x='1186' y='300' xlink:href='#pk'><title>&#x1F511;  Pk pk_staff ( staff_id ) </title></use><a xlink:href='#ledger_schema.staff_staff_id'><text id='ledger&#95;schema&#46;staff&#46;staff&#95;id' x='1203' y='311' onmouseover="hghl(['order_staff_order','ledger_schema.order.staff_id'])" onmouseout="uhghl(['order_staff_order','ledger_schema.order.staff_id'])">staff&#95;id</text><title>&#10697;  staff_id
      * varchar(45)
  &#8601; order( staff_id )</title></a>
-<a xlink:href='#ledger_schema.staff.staff_id'><use id='ref' x='692' y='572' xlink:href='#ref'/><title>&#x1F517;  Referred by order ( staff_id ) </title></a>
-  <use id='nn' x='530' y='589' xlink:href='#nn'/><use id='idx' x='530' y='588' xlink:href='#idx'><title>&#x1F50D;  user_staff_idx ( user_id ) </title></use><a xlink:href='#ledger_schema.staff_user_id'><text id='ledger&#95;schema&#46;staff&#46;user&#95;id' x='547' y='599' onmouseover="hghl(['staff_user_staff','ledger_schema.user.user_id'])" onmouseout="uhghl(['staff_user_staff','ledger_schema.user.user_id'])">user&#95;id</text><title>&#10697;  user_id
+<a xlink:href='#ledger_schema.staff.staff_id'><use id='ref' x='1348' y='300' xlink:href='#ref'/><title>&#x1F517;  Referred by order ( staff_id ) </title></a>
+  <use id='nn' x='1186' y='317' xlink:href='#nn'/><use id='idx' x='1186' y='316' xlink:href='#idx'><title>&#x1F50D;  user_staff_idx ( user_id ) </title></use><a xlink:href='#ledger_schema.staff_user_id'><text id='ledger&#95;schema&#46;staff&#46;user&#95;id' x='1203' y='327' onmouseover="hghl(['staff_user_staff','ledger_schema.user.user_id'])" onmouseout="uhghl(['staff_user_staff','ledger_schema.user.user_id'])">user&#95;id</text><title>&#10697;  user_id
      * varchar(45)
  &#8599; staff( user_id )</title></a>
-<a xlink:href='#ledger_schema.staff.user_id'><use id='fk' x='692' y='588' xlink:href='#fk'/><title>&#x1F517;  References user ( user_id ) </title></a>
-  <a xlink:href='#ledger_schema.staff_staff_name'><text id='ledger&#95;schema&#46;staff&#46;staff&#95;name' x='547' y='615'>staff&#95;name</text><title>&#10697;  staff_name
+<a xlink:href='#ledger_schema.staff.user_id'><use id='fk' x='1348' y='316' xlink:href='#fk'/><title>&#x1F517;  References user ( user_id ) </title></a>
+  <a xlink:href='#ledger_schema.staff_staff_name'><text id='ledger&#95;schema&#46;staff&#46;staff&#95;name' x='1203' y='343'>staff&#95;name</text><title>&#10697;  staff_name
      varchar(45)</title></a>
-<text x='701' y='612' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.staff_staff_phone_number'><text id='ledger&#95;schema&#46;staff&#46;staff&#95;phone&#95;number' x='547' y='631'>staff&#95;phone&#95;number</text><title>&#10697;  staff_phone_number
+<text x='1357' y='340' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.staff_staff_phone_number'><text id='ledger&#95;schema&#46;staff&#46;staff&#95;phone&#95;number' x='1203' y='359'>staff&#95;phone&#95;number</text><title>&#10697;  staff_phone_number
      varchar(10)</title></a>
-<text x='701' y='628' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.staff_staff_email'><text id='ledger&#95;schema&#46;staff&#46;staff&#95;email' x='547' y='647'>staff&#95;email</text><title>&#10697;  staff_email
+<text x='1357' y='356' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.staff_staff_email'><text id='ledger&#95;schema&#46;staff&#46;staff&#95;email' x='1203' y='375'>staff&#95;email</text><title>&#10697;  staff_email
      varchar(45)</title></a>
-<text x='701' y='644' text-anchor='end' class='colType'>t</text>
+<text x='1357' y='372' text-anchor='end' class='colType'>t</text>
 <!-- == Table 'tag' == -->
-<rect id='depict_ledger&#95;schema&#46;tag' class='entity' style='stroke:none;' x='272' y='536' width='112' height='96' rx='4' ry='4' />
-<path d='M 272 564 L 272 540 Q 272 536 276 536 L 380 536 Q 384 536 384 540 L 384 564 L272 564 ' style='fill:url(#tbg_BED3F4);stroke-width:0;' />
-<rect class='entity' x='272' y='536' width='112' height='96' rx='4' ry='4' style='fill:none;stroke:#E1E7F2'/>
-<a xlink:href='#ledger_schema.tag'><text x='314' y='555' >tag</text><title>Table ledger_schema.tag</title></a>
-  <use id='nn' x='274' y='573' xlink:href='#nn'/><use id='pk' x='274' y='572' xlink:href='#pk'><title>&#x1F511;  Pk pk_tag ( tag_id ) </title></use><a xlink:href='#ledger_schema.tag_tag_id'><text id='ledger&#95;schema&#46;tag&#46;tag&#95;id' x='291' y='583' onmouseover="hghl(['order_tag_tag_ot','ledger_schema.order_tag.tag_id'])" onmouseout="uhghl(['order_tag_tag_ot','ledger_schema.order_tag.tag_id'])">tag&#95;id</text><title>&#10697;  tag_id
+<rect id='depict_ledger&#95;schema&#46;tag' class='entity' style='stroke:none;' x='944' y='520' width='112' height='96' rx='4' ry='4' />
+<path d='M 944 548 L 944 524 Q 944 520 948 520 L 1052 520 Q 1056 520 1056 524 L 1056 548 L944 548 ' style='fill:url(#tbg_C7F4BE);stroke-width:0;' />
+<rect class='entity' x='944' y='520' width='112' height='96' rx='4' ry='4' style='fill:none;stroke:#E3F2E1'/>
+<a xlink:href='#ledger_schema.tag'><text x='986' y='539' >tag</text><title>Table ledger_schema.tag</title></a>
+  <use id='nn' x='946' y='557' xlink:href='#nn'/><use id='pk' x='946' y='556' xlink:href='#pk'><title>&#x1F511;  Pk pk_tag ( tag_id ) </title></use><a xlink:href='#ledger_schema.tag_tag_id'><text id='ledger&#95;schema&#46;tag&#46;tag&#95;id' x='963' y='567' onmouseover="hghl(['order_tag_tag_ot','ledger_schema.order_tag.tag_id'])" onmouseout="uhghl(['order_tag_tag_ot','ledger_schema.order_tag.tag_id'])">tag&#95;id</text><title>&#10697;  tag_id
      * varchar(45)
  &#8601; order_tag( tag_id )</title></a>
-<a xlink:href='#ledger_schema.tag.tag_id'><use id='ref' x='372' y='572' xlink:href='#ref'/><title>&#x1F517;  Referred by order_tag ( tag_id ) </title></a>
-  <use id='nn' x='274' y='589' xlink:href='#nn'/><use id='idx' x='274' y='588' xlink:href='#idx'><title>&#x1F50D;  user_tag_idx ( user_id ) </title></use><a xlink:href='#ledger_schema.tag_user_id'><text id='ledger&#95;schema&#46;tag&#46;user&#95;id' x='291' y='599' onmouseover="hghl(['tag_user_tag','ledger_schema.user.user_id'])" onmouseout="uhghl(['tag_user_tag','ledger_schema.user.user_id'])">user&#95;id</text><title>&#10697;  user_id
+<a xlink:href='#ledger_schema.tag.tag_id'><use id='ref' x='1044' y='556' xlink:href='#ref'/><title>&#x1F517;  Referred by order_tag ( tag_id ) </title></a>
+  <use id='nn' x='946' y='573' xlink:href='#nn'/><use id='idx' x='946' y='572' xlink:href='#idx'><title>&#x1F50D;  user_tag_idx ( user_id ) </title></use><a xlink:href='#ledger_schema.tag_user_id'><text id='ledger&#95;schema&#46;tag&#46;user&#95;id' x='963' y='583' onmouseover="hghl(['tag_user_tag','ledger_schema.user.user_id'])" onmouseout="uhghl(['tag_user_tag','ledger_schema.user.user_id'])">user&#95;id</text><title>&#10697;  user_id
      * varchar(45)
  &#8599; tag( user_id )</title></a>
-<a xlink:href='#ledger_schema.tag.user_id'><use id='fk' x='372' y='588' xlink:href='#fk'/><title>&#x1F517;  References user ( user_id ) </title></a>
-  <a xlink:href='#ledger_schema.tag_tag_name'><text id='ledger&#95;schema&#46;tag&#46;tag&#95;name' x='291' y='615'>tag&#95;name</text><title>&#10697;  tag_name
+<a xlink:href='#ledger_schema.tag.user_id'><use id='fk' x='1044' y='572' xlink:href='#fk'/><title>&#x1F517;  References user ( user_id ) </title></a>
+  <a xlink:href='#ledger_schema.tag_tag_name'><text id='ledger&#95;schema&#46;tag&#46;tag&#95;name' x='963' y='599'>tag&#95;name</text><title>&#10697;  tag_name
      varchar(45)</title></a>
-<text x='381' y='612' text-anchor='end' class='colType'>t</text>
+<text x='1053' y='596' text-anchor='end' class='colType'>t</text>
 <!-- == Table 'type' == -->
-<rect id='depict_ledger&#95;schema&#46;type' class='entity' style='stroke:none;' x='1200' y='328' width='112' height='96' rx='4' ry='4' />
-<path d='M 1200 356 L 1200 332 Q 1200 328 1204 328 L 1308 328 Q 1312 328 1312 332 L 1312 356 L1200 356 ' style='fill:url(#tbg_C7F4BE);stroke-width:0;' />
-<rect class='entity' x='1200' y='328' width='112' height='96' rx='4' ry='4' style='fill:none;stroke:#E3F2E1'/>
-<a xlink:href='#ledger_schema.type'><text x='1238' y='347' >type</text><title>Table ledger_schema.type</title></a>
-  <use id='nn' x='1202' y='365' xlink:href='#nn'/><use id='pk' x='1202' y='364' xlink:href='#pk'><title>&#x1F511;  Pk pk_type ( type_id ) </title></use><a xlink:href='#ledger_schema.type_type_id'><text id='ledger&#95;schema&#46;type&#46;type&#95;id' x='1219' y='375' onmouseover="hghl(['product_type_product','ledger_schema.product.type_id'])" onmouseout="uhghl(['product_type_product','ledger_schema.product.type_id'])">type&#95;id</text><title>&#10697;  type_id
+<rect id='depict_ledger&#95;schema&#46;type' class='entity' style='stroke:none;' x='528' y='264' width='112' height='96' rx='4' ry='4' />
+<path d='M 528 292 L 528 268 Q 528 264 532 264 L 636 264 Q 640 264 640 268 L 640 292 L528 292 ' style='fill:url(#tbg_BED3F4);stroke-width:0;' />
+<rect class='entity' x='528' y='264' width='112' height='96' rx='4' ry='4' style='fill:none;stroke:#E1E7F2'/>
+<a xlink:href='#ledger_schema.type'><text x='566' y='283' >type</text><title>Table ledger_schema.type</title></a>
+  <use id='nn' x='530' y='301' xlink:href='#nn'/><use id='pk' x='530' y='300' xlink:href='#pk'><title>&#x1F511;  Pk pk_type ( type_id ) </title></use><a xlink:href='#ledger_schema.type_type_id'><text id='ledger&#95;schema&#46;type&#46;type&#95;id' x='547' y='311' onmouseover="hghl(['product_type_product','ledger_schema.product.type_id'])" onmouseout="uhghl(['product_type_product','ledger_schema.product.type_id'])">type&#95;id</text><title>&#10697;  type_id
      * varchar(45)
  &#8601; product( type_id )</title></a>
-<a xlink:href='#ledger_schema.type.type_id'><use id='ref' x='1300' y='364' xlink:href='#ref'/><title>&#x1F517;  Referred by product ( type_id ) </title></a>
-  <use id='nn' x='1202' y='381' xlink:href='#nn'/><use id='idx' x='1202' y='380' xlink:href='#idx'><title>&#x1F50D;  user_type_idx ( user_id ) </title></use><a xlink:href='#ledger_schema.type_user_id'><text id='ledger&#95;schema&#46;type&#46;user&#95;id' x='1219' y='391' onmouseover="hghl(['type_user_type','ledger_schema.user.user_id'])" onmouseout="uhghl(['type_user_type','ledger_schema.user.user_id'])">user&#95;id</text><title>&#10697;  user_id
+<a xlink:href='#ledger_schema.type.type_id'><use id='ref' x='628' y='300' xlink:href='#ref'/><title>&#x1F517;  Referred by product ( type_id ) </title></a>
+  <use id='nn' x='530' y='317' xlink:href='#nn'/><use id='idx' x='530' y='316' xlink:href='#idx'><title>&#x1F50D;  user_type_idx ( user_id ) </title></use><a xlink:href='#ledger_schema.type_user_id'><text id='ledger&#95;schema&#46;type&#46;user&#95;id' x='547' y='327' onmouseover="hghl(['type_user_type','ledger_schema.user.user_id'])" onmouseout="uhghl(['type_user_type','ledger_schema.user.user_id'])">user&#95;id</text><title>&#10697;  user_id
      * varchar(45)
  &#8599; type( user_id )</title></a>
-<a xlink:href='#ledger_schema.type.user_id'><use id='fk' x='1300' y='380' xlink:href='#fk'/><title>&#x1F517;  References user ( user_id ) </title></a>
-  <a xlink:href='#ledger_schema.type_type_name'><text id='ledger&#95;schema&#46;type&#46;type&#95;name' x='1219' y='407'>type&#95;name</text><title>&#10697;  type_name
+<a xlink:href='#ledger_schema.type.user_id'><use id='fk' x='628' y='316' xlink:href='#fk'/><title>&#x1F517;  References user ( user_id ) </title></a>
+  <a xlink:href='#ledger_schema.type_type_name'><text id='ledger&#95;schema&#46;type&#46;type&#95;name' x='547' y='343'>type&#95;name</text><title>&#10697;  type_name
      varchar(45)</title></a>
-<text x='1309' y='404' text-anchor='end' class='colType'>t</text>
+<text x='637' y='340' text-anchor='end' class='colType'>t</text>
 <!-- == Table 'user' == -->
-<rect id='depict_ledger&#95;schema&#46;user' class='entity' style='stroke:none;' x='272' y='264' width='192' height='176' rx='4' ry='4' />
-<path d='M 272 292 L 272 268 Q 272 264 276 264 L 460 264 Q 464 264 464 268 L 464 292 L272 292 ' style='fill:url(#tbg_BED3F4);stroke-width:0;' />
-<rect class='entity' x='272' y='264' width='192' height='176' rx='4' ry='4' style='fill:none;stroke:#E1E7F2'/>
-<a xlink:href='#ledger_schema.user'><text x='351' y='283' >user</text><title>Table ledger_schema.user</title></a>
-  <use id='nn' x='274' y='301' xlink:href='#nn'/><use id='pk' x='274' y='300' xlink:href='#pk'><title>&#x1F511;  Pk pk_user ( user_id ) </title></use><a xlink:href='#ledger_schema.user_user_id'><text id='ledger&#95;schema&#46;user&#46;user&#95;id' x='291' y='311' onmouseover="hghl(['discount_user_discount','ledger_schema.discount.user_id','order_user_order','ledger_schema.order.user_id','preorder_user_preorder','ledger_schema.preorder.user_id','product_user_product','ledger_schema.product.user_id','staff_user_staff','ledger_schema.staff.user_id','tag_user_tag','ledger_schema.tag.user_id','type_user_type','ledger_schema.type.user_id'])" onmouseout="uhghl(['discount_user_discount','ledger_schema.discount.user_id','order_user_order','ledger_schema.order.user_id','preorder_user_preorder','ledger_schema.preorder.user_id','product_user_product','ledger_schema.product.user_id','staff_user_staff','ledger_schema.staff.user_id','tag_user_tag','ledger_schema.tag.user_id','type_user_type','ledger_schema.type.user_id'])">user&#95;id</text><title>&#10697;  user_id
+<rect id='depict_ledger&#95;schema&#46;user' class='entity' style='stroke:none;' x='48' y='264' width='192' height='176' rx='4' ry='4' />
+<path d='M 48 292 L 48 268 Q 48 264 52 264 L 236 264 Q 240 264 240 268 L 240 292 L48 292 ' style='fill:url(#tbg_BED3F4);stroke-width:0;' />
+<rect class='entity' x='48' y='264' width='192' height='176' rx='4' ry='4' style='fill:none;stroke:#E1E7F2'/>
+<a xlink:href='#ledger_schema.user'><text x='127' y='283' >user</text><title>Table ledger_schema.user</title></a>
+  <use id='nn' x='50' y='301' xlink:href='#nn'/><use id='pk' x='50' y='300' xlink:href='#pk'><title>&#x1F511;  Pk pk_user ( user_id ) </title></use><a xlink:href='#ledger_schema.user_user_id'><text id='ledger&#95;schema&#46;user&#46;user&#95;id' x='67' y='311' onmouseover="hghl(['discount_user_discount','ledger_schema.discount.user_id','order_user_order','ledger_schema.order.user_id','preorder_user_preorder','ledger_schema.preorder.user_id','product_user_product','ledger_schema.product.user_id','staff_user_staff','ledger_schema.staff.user_id','tag_user_tag','ledger_schema.tag.user_id','type_user_type','ledger_schema.type.user_id'])" onmouseout="uhghl(['discount_user_discount','ledger_schema.discount.user_id','order_user_order','ledger_schema.order.user_id','preorder_user_preorder','ledger_schema.preorder.user_id','product_user_product','ledger_schema.product.user_id','staff_user_staff','ledger_schema.staff.user_id','tag_user_tag','ledger_schema.tag.user_id','type_user_type','ledger_schema.type.user_id'])">user&#95;id</text><title>&#10697;  user_id
      * varchar(45)
  &#8601; discount( user_id )
  &#8601; order( user_id )
@@ -586,36 +620,36 @@ Referred by preorder_product ( product_id ) </title></a>
  &#8601; staff( user_id )
  &#8601; tag( user_id )
  &#8601; type( user_id )</title></a>
-<a xlink:href='#ledger_schema.user.user_id'><use id='ref' x='452' y='300' xlink:href='#ref'/><title>&#x1F517;  Referred by discount ( user_id ) 
+<a xlink:href='#ledger_schema.user.user_id'><use id='ref' x='228' y='300' xlink:href='#ref'/><title>&#x1F517;  Referred by discount ( user_id ) 
 Referred by order ( user_id ) 
 Referred by preorder ( user_id ) 
 Referred by product ( user_id ) 
 Referred by staff ( user_id ) 
 Referred by tag ( user_id ) 
 Referred by type ( user_id ) </title></a>
-  <a xlink:href='#ledger_schema.user_user_first_name'><text id='ledger&#95;schema&#46;user&#46;user&#95;first&#95;name' x='291' y='327'>user&#95;first&#95;name</text><title>&#10697;  user_first_name
+  <a xlink:href='#ledger_schema.user_user_first_name'><text id='ledger&#95;schema&#46;user&#46;user&#95;first&#95;name' x='67' y='327'>user&#95;first&#95;name</text><title>&#10697;  user_first_name
      varchar(20)</title></a>
-<text x='461' y='324' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.user_user_last_name'><text id='ledger&#95;schema&#46;user&#46;user&#95;last&#95;name' x='291' y='343'>user&#95;last&#95;name</text><title>&#10697;  user_last_name
+<text x='237' y='324' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.user_user_last_name'><text id='ledger&#95;schema&#46;user&#46;user&#95;last&#95;name' x='67' y='343'>user&#95;last&#95;name</text><title>&#10697;  user_last_name
      varchar(20)</title></a>
-<text x='461' y='340' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.user_user_email'><text id='ledger&#95;schema&#46;user&#46;user&#95;email' x='291' y='359'>user&#95;email</text><title>&#10697;  user_email
+<text x='237' y='340' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.user_user_email'><text id='ledger&#95;schema&#46;user&#46;user&#95;email' x='67' y='359'>user&#95;email</text><title>&#10697;  user_email
      varchar(45)</title></a>
-<text x='461' y='356' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.user_user_how_to_know_us'><text id='ledger&#95;schema&#46;user&#46;user&#95;how&#95;to&#95;know&#95;us' x='291' y='375'>user&#95;how&#95;to&#95;know&#95;us</text><title>&#10697;  user_how_to_know_us
+<text x='237' y='356' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.user_user_how_to_know_us'><text id='ledger&#95;schema&#46;user&#46;user&#95;how&#95;to&#95;know&#95;us' x='67' y='375'>user&#95;how&#95;to&#95;know&#95;us</text><title>&#10697;  user_how_to_know_us
      varchar(45)</title></a>
-<text x='461' y='372' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.user_user_phone_number'><text id='ledger&#95;schema&#46;user&#46;user&#95;phone&#95;number' x='291' y='391'>user&#95;phone&#95;number</text><title>&#10697;  user_phone_number
+<text x='237' y='372' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.user_user_phone_number'><text id='ledger&#95;schema&#46;user&#46;user&#95;phone&#95;number' x='67' y='391'>user&#95;phone&#95;number</text><title>&#10697;  user_phone_number
      varchar(10)</title></a>
-<text x='461' y='388' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.user_store_name'><text id='ledger&#95;schema&#46;user&#46;store&#95;name' x='291' y='407'>store&#95;name</text><title>&#10697;  store_name
+<text x='237' y='388' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.user_store_name'><text id='ledger&#95;schema&#46;user&#46;store&#95;name' x='67' y='407'>store&#95;name</text><title>&#10697;  store_name
      varchar(50)</title></a>
-<text x='461' y='404' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.user_user_create_time'><text id='ledger&#95;schema&#46;user&#46;user&#95;create&#95;time' x='291' y='423'>user&#95;create&#95;time</text><title>&#10697;  user_create_time
+<text x='237' y='404' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ledger_schema.user_user_create_time'><text id='ledger&#95;schema&#46;user&#46;user&#95;create&#95;time' x='67' y='423'>user&#95;create&#95;time</text><title>&#10697;  user_create_time
      datetime default CURRENT_TIMESTAMP</title></a>
-<text x='461' y='420' text-anchor='end' class='colType'>d</text>
+<text x='237' y='420' text-anchor='end' class='colType'>d</text>
 <!-- == Callout == -->
-<rect class='callout' x='272' y='112' width='416' height='134' rx='16' ry='16'  />
-<text x='296' y='112' class='callout'>
-    <tspan x='276.000000' dx='8' dy='20'>This is a layout&#46; </tspan>
-    <tspan x='276.000000' dx='8' dy='20'>&#45; Double&#45;click table headers&#44; columns&#44; or foreign keys to edit </tspan>
-    <tspan x='276.000000' dx='8' dy='20'>&#45; Drag tables to the layout from the structure tree&#44; or </tspan>
-    <tspan x='276.000000' dx='8' dy='20'>   add them by pressing the arrow icon near columns </tspan>
-    <tspan x='276.000000' dx='8' dy='20'>&#45; Create multiple layouts with the same or different tables </tspan>
-    <tspan x='276.000000' dx='8' dy='20'>&#45; Right&#45;click the layout to create new tables</tspan>
+<rect class='callout' x='96' y='64' width='416' height='134' rx='16' ry='16'  />
+<text x='120' y='64' class='callout'>
+    <tspan x='100.000000' dx='8' dy='20'>This is a layout&#46; </tspan>
+    <tspan x='100.000000' dx='8' dy='20'>&#45; Double&#45;click table headers&#44; columns&#44; or foreign keys to edit </tspan>
+    <tspan x='100.000000' dx='8' dy='20'>&#45; Drag tables to the layout from the structure tree&#44; or </tspan>
+    <tspan x='100.000000' dx='8' dy='20'>   add them by pressing the arrow icon near columns </tspan>
+    <tspan x='100.000000' dx='8' dy='20'>&#45; Create multiple layouts with the same or different tables </tspan>
+    <tspan x='100.000000' dx='8' dy='20'>&#45; Right&#45;click the layout to create new tables</tspan>
 </text>
 </g></svg>

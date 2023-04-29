@@ -8,7 +8,7 @@ MySQL local DB for testing
     ```
     * example
         ```
-        docker build -t mysql-test:latest .
+        docker build -t mysql-cerana:latest .
         ```
 * step 2: create volume
     ```
@@ -25,7 +25,7 @@ MySQL local DB for testing
     ```
     * example
         ```
-        docker run -d --name mysql-test-container -e MYSQL_ROOT_PASSWORD=rootpwd -p 3306:3306 -v cerana-test:/var/lib/mysql mysql-test:latest
+        docker run -d --name mysql-test-container -e MYSQL_ROOT_PASSWORD=rootpwd -p 3306:3306 -v cerana-test:/var/lib/mysql mysql-cerana:latest
         ```
 
 
